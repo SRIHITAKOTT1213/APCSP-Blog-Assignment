@@ -8,4 +8,4 @@ This website is powered by **[APCSP]([https://github.com/fastai/fastpages](https
 
 
 
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+[^1]: A baking website that showcases many mouthwatering recipes.
