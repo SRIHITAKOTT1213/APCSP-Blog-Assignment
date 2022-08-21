@@ -8,4 +8,4 @@ This website is powered by **[APCSP]([https://github.com/fastai/fastpages](https
 
 
 
-[^1]: A baking website that showcases many mouthwatering recipes.
+[^1]: A blog for computer science principles.
