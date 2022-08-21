@@ -4,7 +4,7 @@ title: About Me
 permalink: /about/
 ---
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+This website is powered by **[APCSP]([https://github.com/fastai/fastpages](https://srihitakott1213.github.io/APCSP-Blog-Assignment/))** [^1].
 
 
 
