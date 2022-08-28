@@ -7,7 +7,7 @@ def question_and_answer(prompt):
     print("Answer: " + msg)
 
 
-import getpass, sys
+import getpass, sys, 
 
 def question_with_response(prompt):
     print("Question: " + prompt)
@@ -22,7 +22,7 @@ print("You will be asked " + str(questions) +" questions. ")
 question_and_answer("Are you ready to take the Quiz?")
 
 rsp = question_with_response("Who was the person who came up with the theory of Evolution")
-if rsp == "Charles Darwin ":
+if rsp == "Charles Darwin":
     print(rsp + " Is correct!")
     correct += 1
 else:
@@ -45,3 +45,4 @@ if rsp == "Adenine, Guanine, Cytosine, Thymine":
 else:
     print(rsp + " is incorrect!")
     print("The correct answer is Adenine, Guanine, Cytosine, Thymine")
+
