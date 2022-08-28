@@ -1,6 +1,4 @@
-print("Hello World")
-msg = input("Hi")
-print(msg)
+
 
 def question_and_answer(prompt):
 
@@ -8,10 +6,6 @@ def question_and_answer(prompt):
     msg = input()
     print("Answer: " + msg)
 
-
-question_and_answer("What is the process of converting light into energy?")
-question_and_answer("What are the names of the three domains of life?")
-question_and_answer("What is the name of a substance that catalyzes a reaction and ends with 'ase'?")
 
 import getpass, sys
 
@@ -23,24 +17,26 @@ def question_with_response(prompt):
 questions = 10
 correct = 0
 
-print('Hello,' + getpass.getuser() + " running " + sys.executable)
+print('Hello,' + getpass.getuser())
 print("You will be asked " + str(questions) +" questions. ")
 question_and_answer("Are you ready to take the Quiz?")
 
 rsp = question_with_response("Who was the person who came up with the theory of Evolution")
-if rsp == "Charles Darwin":
+if rsp == "Charles Darwin ":
     print(rsp + " Is correct!")
     correct += 1
 else:
-    print(rsp + "incorrect")
+    print(rsp + " is incorrect") 
+    print("The correct answer is Charles Darwin")
 
 rsp = question_with_response("What does DNA stand for?")
 if rsp == "Deoxyribonucleic Acid":
     print(rsp + " is correct!")
-
+    
     correct += 1
 else:
-    print(rsp + " is incorrect!")
+    print(rsp + " is incorrect!") 
+    print("The correct answer is Deoxyribonucleic Acid")
 
 rsp = question_with_response("What are nitrogenous bases in DNA")
 if rsp == "Adenine, Guanine, Cytosine, Thymine":
@@ -48,3 +44,4 @@ if rsp == "Adenine, Guanine, Cytosine, Thymine":
     correct += 1
 else:
     print(rsp + " is incorrect!")
+    print("The correct answer is Adenine, Guanine, Cytosine, Thymine")
