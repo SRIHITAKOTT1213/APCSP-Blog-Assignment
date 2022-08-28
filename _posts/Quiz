@@ -1,7 +1,7 @@
 print("Hello World")
 msg = input("Hi")
 print(msg)
-<<<<<<< HEAD
+
 def question_and_answer(prompt):
 =======
 def question_and_answer(prompt):
