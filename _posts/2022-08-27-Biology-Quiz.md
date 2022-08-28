@@ -4,8 +4,6 @@ print(msg)
 
 def question_and_answer(prompt):
 
-def question_and_answer(prompt):
-
     print("Question: " + prompt)
     msg = input()
     print("Answer: " + msg)
@@ -14,7 +12,8 @@ def question_and_answer(prompt):
 question_and_answer("What is the process of converting light into energy?")
 question_and_answer("What are the names of the three domains of life?")
 question_and_answer("What is the name of a substance that catalyzes a reaction and ends with 'ase'?")
-import getpass,sys
+
+import getpass, sys
 
 def question_and_answer(prompt:)
     print("Question: " + prompt)
