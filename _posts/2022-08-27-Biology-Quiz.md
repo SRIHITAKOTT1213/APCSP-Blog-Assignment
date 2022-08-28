@@ -1,3 +1,9 @@
+---
+- toc: true
+- comments: true
+- title: Biology Quiz
+- image: /images/aws.png
+
 
 
 def question_and_answer(prompt):
