@@ -7,7 +7,7 @@ def question_and_answer(prompt):
     print("Answer: " + msg)
 
 
-import getpass, sys, 
+import getpass, sys
 
 def question_with_response(prompt):
     print("Question: " + prompt)
@@ -21,28 +21,19 @@ print('Hello,' + getpass.getuser())
 print("You will be asked " + str(questions) +" questions. ")
 question_and_answer("Are you ready to take the Quiz?")
 
-rsp = question_with_response("Who was the person who came up with the theory of Evolution")
-if rsp == "Charles Darwin":
-    print(rsp + " Is correct!")
-    correct += 1
-else:
-    print(rsp + " is incorrect") 
-    print("The correct answer is Charles Darwin")
 
-rsp = question_with_response("What does DNA stand for?")
-if rsp == "Deoxyribonucleic Acid":
-    print(rsp + " is correct!")
-    
-    correct += 1
-else:
-    print(rsp + " is incorrect!") 
-    print("The correct answer is Deoxyribonucleic Acid")
+questions = ["What are nitrogenous bases in DNA?", "What does DNA stand for?", "Who was the person who came up with the theory of Evolution?","In what cell does photosynthesis take place?", "What is the name of the relationship in which both sides benefit?", "Glycogen is a polymer of what?", "How many chromosomes do humans have?", "What are the weak bonds between water molecules called?", "What is the division of body cells called?", "What is the division of gametes called?"]
+answers = ["Adenine, Guanine, Cytosine, Thymine", "Deoxyribonucleic Acid", "Charles Darwin","Chloroplast", "Mutualism", "Glucose", "46", "Hydrogen bonds", "Mitosis", "Meiosis"]
 
-rsp = question_with_response("What are nitrogenous bases in DNA")
-if rsp == "Adenine, Guanine, Cytosine, Thymine":
-    print(rsp + " is correct!")
-    correct += 1
-else:
-    print(rsp + " is incorrect!")
-    print("The correct answer is Adenine, Guanine, Cytosine, Thymine")
+for i in range(len(questions)):
+    rsp = question_with_response(questions[i])
+    if rsp == answers[i]:
+       print(rsp + " is correct!")
 
+       correct += 1
+
+    else:
+       print(rsp + " is incorrect")
+       print("The correct answer is " + answers[i])
+
+print(getpass.getuser() + " you scored " + str(correct) +"/10")
