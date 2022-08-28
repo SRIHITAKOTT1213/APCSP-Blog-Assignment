@@ -15,7 +15,7 @@ question_and_answer("What is the name of a substance that catalyzes a reaction a
 
 import getpass, sys
 
-def question_and_answer(prompt:)
+def question_with_response(prompt):
     print("Question: " + prompt)
     msg = input()
     return msg
@@ -27,7 +27,7 @@ print('Hello,' + getpass.getuser() + " running " + sys.executable)
 print("You will be asked " + str(questions) +" questions. ")
 question_and_answer("Are you ready to take the Quiz?")
 
-rsp = question_and_response("Who was the person who came up with the theory of Evolution")
+rsp = question_with_response("Who was the person who came up with the theory of Evolution")
 if rsp == "Charles Darwin":
     print(rsp + " Is correct!")
     correct += 1
