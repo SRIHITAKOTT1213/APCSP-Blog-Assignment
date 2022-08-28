@@ -1,8 +1,8 @@
 print("Hello World")
 msg = input("Hi")
 print(msg)
-def question_and_answer(promt):
-    print("Question: " + promt)
+def question_and_answer(prompt):
+    print("Question: " + prompt)
     msg = input()
     print("Answer: " + msg)
 
