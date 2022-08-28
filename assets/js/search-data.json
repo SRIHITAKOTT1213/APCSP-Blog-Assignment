@@ -2,11 +2,11 @@
   
     
         "post0": {
-            "title": "Test",
+            "title": "Name",
             "content": "print(“Hello World”) msg = input(“Hi”) print(msg) . def question_and_answer(prompt): . def question_and_answer(prompt): . print(&quot;Question: &quot; + prompt) msg = input() print(&quot;Answer: &quot; + msg) . question_and_answer(“What is the process of converting light into energy?”) question_and_answer(“What are the names of the three domains of life?”) question_and_answer(“What is the name of a substance that catalyzes a reaction and ends with ‘ase’?”) import getpass,sys . def question_and_answer(prompt:) print(“Question: “ + prompt) msg = input() return msg . questions = 10 correct = 0 . print(‘Hello,’ + getpass.getuser() + “ running “ + sys.executable) print(“You will be asked “ + str(questions) +” questions. “) question_and_answer(“Are you ready to take the Quiz?”) . rsp = question_and_response(“Who was the person who came up with the theory of Evolution”) if rsp == “Charles Darwin”: print(rsp + “ Is correct!”) correct += 1 else: print(rsp + “incorrect”) . rsp = question_with_response(“What does DNA stand for?”) if rsp == “Deoxyribonucleic Acid”: print(rsp + “ is correct!”) . correct += 1 else: print(rsp + &quot; is incorrect!&quot;) . rsp = question_with_response(“What are nitrogenous bases in DNA”) if rsp == “Adenine, Guanine, Cytosine, Thymine”: print(rsp + “ is correct!”) correct += 1 else: print(rsp + “ is incorrect!”) .",
-            "url": "https://srihitakott1213.github.io/APCSP-Blog-Assignment/2020/02/20/test.ipynb",
-            "relUrl": "/2020/02/20/test.ipynb",
-            "date": " • Feb 20, 2020"
+            "url": "https://srihitakott1213.github.io/APCSP-Blog-Assignment/2022/08/27/name.ipynb",
+            "relUrl": "/2022/08/27/name.ipynb",
+            "date": " • Aug 27, 2022"
         }
         
     
