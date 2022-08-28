@@ -2,7 +2,7 @@ print("Hello World")
 msg = input("Hi")
 print(msg)
 def question_and_answer(promt):
-    print("Questiion: " + promt)
+    print("Question: " + prompt)
     msg = input()
     print("Answer: " + msg)
 
