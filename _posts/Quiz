@@ -3,7 +3,7 @@ msg = input("Hi")
 print(msg)
 
 def question_and_answer(prompt):
-=======
+
 def question_and_answer(prompt):
 
     print("Question: " + prompt)
