@@ -149,16 +149,16 @@ window.onload = wrap_img;
     <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
     <span class="k">return</span> <span class="n">msg</span>
 
-<span class="n">questions</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">questions</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"What are nitrogenous bases in DNA?"</span><span class="p">,</span> <span class="s2">"What does DNA stand for?"</span><span class="p">,</span> <span class="s2">"Who was the person who came up with the theory of Evolution?"</span><span class="p">,</span><span class="s2">"In what cell does photosynthesis take place?"</span><span class="p">,</span> <span class="s2">"What is the name of the relationship in which both sides benefit?"</span><span class="p">,</span> <span class="s2">"Glycogen is a polymer of what?"</span><span class="p">,</span> <span class="s2">"How many chromosomes do humans have?"</span><span class="p">,</span> <span class="s2">"What are the weak bonds between water molecules called?"</span><span class="p">,</span> <span class="s2">"What is the division of body cells called?"</span><span class="p">,</span> <span class="s2">"What is the division of gametes called?"</span><span class="p">]</span>
+<span class="n">answers</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Adenine, Guanine, Cytosine, Thymine"</span><span class="p">,</span> <span class="s2">"Deoxyribonucleic Acid"</span><span class="p">,</span> <span class="s2">"Charles Darwin"</span><span class="p">,</span><span class="s2">"Chloroplast"</span><span class="p">,</span> <span class="s2">"Mutualism"</span><span class="p">,</span> <span class="s2">"Glucose"</span><span class="p">,</span> <span class="s2">"46"</span><span class="p">,</span> <span class="s2">"Hydrogen bonds"</span><span class="p">,</span> <span class="s2">"Mitosis"</span><span class="p">,</span> <span class="s2">"Meiosis"</span><span class="p">]</span>
 <span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s1">'Hello,'</span> <span class="o">+</span> <span class="n">getpass</span><span class="o">.</span><span class="n">getuser</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"You will be asked "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">)</span> <span class="o">+</span><span class="s2">" questions. "</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"You will be asked "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">questions</span><span class="p">))</span> <span class="o">+</span><span class="s2">" questions. "</span><span class="p">)</span>
 <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">"Are you ready to take the Quiz?"</span><span class="p">)</span>
 
 
-<span class="n">questions</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"What are nitrogenous bases in DNA?"</span><span class="p">,</span> <span class="s2">"What does DNA stand for?"</span><span class="p">,</span> <span class="s2">"Who was the person who came up with the theory of Evolution?"</span><span class="p">,</span><span class="s2">"In what cell does photosynthesis take place?"</span><span class="p">,</span> <span class="s2">"What is the name of the relationship in which both sides benefit?"</span><span class="p">,</span> <span class="s2">"Glycogen is a polymer of what?"</span><span class="p">,</span> <span class="s2">"How many chromosomes do humans have?"</span><span class="p">,</span> <span class="s2">"What are the weak bonds between water molecules called?"</span><span class="p">,</span> <span class="s2">"What is the division of body cells called?"</span><span class="p">,</span> <span class="s2">"What is the division of gametes called?"</span><span class="p">]</span>
-<span class="n">answers</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Adenine, Guanine, Cytosine, Thymine"</span><span class="p">,</span> <span class="s2">"Deoxyribonucleic Acid"</span><span class="p">,</span> <span class="s2">"Charles Darwin"</span><span class="p">,</span><span class="s2">"Chloroplast"</span><span class="p">,</span> <span class="s2">"Mutualism"</span><span class="p">,</span> <span class="s2">"Glucose"</span><span class="p">,</span> <span class="s2">"46"</span><span class="p">,</span> <span class="s2">"Hydrogen bonds"</span><span class="p">,</span> <span class="s2">"Mitosis"</span><span class="p">,</span> <span class="s2">"Meiosis"</span><span class="p">]</span>
+
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">questions</span><span class="p">)):</span>
     <span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="n">questions</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
@@ -175,6 +175,27 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello,srihitak
+You will be asked 10 questions. 
+Question: Are you ready to take the Quiz?
+Answer: 
+Question: What are nitrogenous bases in DNA?
+yes is incorrect
+The correct answer is Adenine, Guanine, Cytosine, Thymine
+Question: What does DNA stand for?
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
