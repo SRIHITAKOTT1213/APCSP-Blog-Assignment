@@ -50,6 +50,6 @@ title: Schedule
         <td>
             0 💰
         </td>
-        <td><a href="https://srihitakott1213.github.io/APCSP-Blog-Assignment/">/week/0"<>>Tool Setup</a></td>
+        <td><a href="https://srihitakott1213.github.io/APCSP-Blog-Assignment/">/week/0"<>Tool Setup</a></td>
     </tr>
 </table>
