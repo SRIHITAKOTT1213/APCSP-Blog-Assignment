@@ -31,7 +31,7 @@ title: Schedule
             2 🚧
         </td>
         <td>
-            <a href="{{site.baseurl}}/week/2">Data Abstraction</a>
+            <a href="https://srihitakott1213.github.io/APCSP-Blog-Assignment/2022/09/04/Python-Lists.html">Python Lists</a>
         </td>
         
     </tr>
@@ -41,7 +41,9 @@ title: Schedule
             1 💰
         </td>
         <td>
-            <a href="{{site.baseurl}}/week/1">Introduction to Python</a>
+            <a href="https://srihitakott1213.github.io/APCSP-Blog-Assignment/2022/08/27/Biology-Quiz.html">Biology Quiz</a>
+            <br>
+            <a href="https://srihitakott1213.github.io/APCSP-Blog-Assignment/2022/09/04/Bash-Project.html">Bash Checks</a>
         </td>
 
     </tr>
@@ -50,6 +52,6 @@ title: Schedule
         <td>
             0 💰
         </td>
-        <td><a href="https://srihitakott1213.github.io/APCSP-Blog-Assignment/">Tool Setup</a></td>
+        <td><a href="https://srihitakott1213.github.io/APCSP-Blog-Assignment/">Build a Website</a></td>
     </tr>
 </table>
