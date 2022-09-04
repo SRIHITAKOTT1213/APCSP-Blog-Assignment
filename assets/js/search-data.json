@@ -33,6 +33,17 @@
         
     
   
+    
+        ,"post3": {
+            "title": "Biology Quiz",
+            "content": "def question_and_answer(prompt): print(&quot;Question: &quot; + prompt) msg = input() print(&quot;Answer: &quot; + msg) import getpass, sys def question_with_response(prompt): print(&quot;Question: &quot; + prompt) msg = input() return msg questions = 10 correct = 0 print(&#39;Hello,&#39; + getpass.getuser()) print(&quot;You will be asked &quot; + str(questions) +&quot; questions. &quot;) questions = [&quot;Are you ready to take the Quiz?&quot;, &quot;What are nitrogenous bases in DNA?&quot;, &quot;What does DNA stand for?&quot;, &quot;Who was the person who came up with the theory of Evolution?&quot;,&quot;In what cell does photosynthesis take place?&quot;, &quot;What is the name of the relationship in which both sides benefit?&quot;, &quot;Glycogen is a polymer of what?&quot;, &quot;How many chromosomes do humans have?&quot;, &quot;What are the weak bonds between water molecules called?&quot;, &quot;What is the division of body cells called?&quot;, &quot;What is the division of gametes called?&quot;] answers = [&quot;yes&quot;, &quot;Adenine, Guanine, Cytosine, Thymine&quot;, &quot;Deoxyribonucleic Acid&quot;, &quot;Charles Darwin&quot;,&quot;Chloroplast&quot;, &quot;Mutualism&quot;, &quot;Glucose&quot;, &quot;46&quot;, &quot;Hydrogen bonds&quot;, &quot;Mitosis&quot;, &quot;Meiosis&quot;] for i in range(len(questions)): rsp = question_with_response(questions[i]) if rsp == answers[i]: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect&quot;) print(&quot;The correct answer is &quot; + answers[i]) print(getpass.getuser() + &quot; you scored &quot; + str(correct) +&quot;/10&quot;) . Hello,srihitak You will be asked 10 questions. Question: Are you ready to take the Quiz? yes is correct! Question: What are nitrogenous bases in DNA? thymine is incorrect The correct answer is Adenine, Guanine, Cytosine, Thymine Question: What does DNA stand for? Deoyribonucleic Acid is incorrect The correct answer is Deoxyribonucleic Acid Question: Who was the person who came up with the theory of Evolution? Charles Darwin is correct! Question: In what cell does photosynthesis take place? Chloroplast is correct! Question: What is the name of the relationship in which both sides benefit? Mutualism is correct! Question: Glycogen is a polymer of what? Glycogen is incorrect The correct answer is Glucose Question: How many chromosomes do humans have? 46 is correct! Question: What are the weak bonds between water molecules called? Hydrogen bonds is correct! Question: What is the division of body cells called? Mitosis is correct! Question: What is the division of gametes called? Meiosis is correct! srihitak you scored 8/10 .",
+            "url": "https://srihitakott1213.github.io/APCSP-Blog-Assignment/2022/08/27/Biology-Quiz.html",
+            "relUrl": "/2022/08/27/Biology-Quiz.html",
+            "date": " • Aug 27, 2022"
+        }
+        
+    
+  
 
   
   
