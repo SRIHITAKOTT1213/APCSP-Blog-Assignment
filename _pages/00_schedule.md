@@ -23,7 +23,6 @@ title: Schedule
             3
         </td>
         <td><a href="{{site.baseurl}}/week/3">Creative Development</a></td>
-        <td>
          
     </tr>
 
