@@ -36,9 +36,20 @@
 
   
   
+      ,"page0": {
+          "title": "Schedule",
+          "content": "Introduction to Tools and Resources . The initial weeks focus on introducing Tools, Pair Programming, and the AP Resources that we plan to use throughout the year. At the end of Weeks 0-3, students will be exposed to blogging with GitHub Pages; developing with Jupyter Notebooks, Python, JavaScript, HTML, and Code.org AppLab; working with AP classroom and becoming familiar with Create Performance Task project requirements. . Week Work . 3 | Creative Development | How I got a 5! | Create Performance Task | JavaScript Tutorial Program Design with AppLab | Creative Development Points Review Tickets | . 2 🚧 | Data Abstraction | Reflections on Computer Science Alumni Panel (extra credit) | Python Lists and Dictionaries | HTML Fragments and Layouts | Data Abstraction Points Review Tickets | . 1 💰 | Introduction to Python | Table Visits | Hello to Python | Bash and Checks Fastpages, Jupyter Notebooks, Markdown | Intro Python, Jupyter, Fastpages Review Tickets | . 0 💰 | Tool Setup | Scoring History | Pseudo Code | Tools and Equipment | Tools Setup Review Tickets | .",
+          "url": "https://srihitakott1213.github.io/APCSP-Blog-Assignment/schedule",
+          "relUrl": "/schedule",
+          "date": ""
+      }
+      
+  
 
   
-      ,"page1": {
+
+  
+      ,"page2": {
           "title": "About Me",
           "content": "This website is powered by APCSP 1. . A blog for computer science principles. &#8617; . |",
           "url": "https://srihitakott1213.github.io/APCSP-Blog-Assignment/about/",
@@ -70,7 +81,7 @@
   
 
   
-      ,"page10": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://srihitakott1213.github.io/APCSP-Blog-Assignment/robots.txt",
