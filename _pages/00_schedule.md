@@ -10,7 +10,7 @@ title: Schedule
 {% assign issues = "https://github.com/nighthawkcoders/APCSP/issues" %}
 
 ## Introduction to Tools and Resources
-> The initial weeks focus on introducing Tools, Pair Programming, and the AP Resources that we plan to use throughout the year. At the end of Weeks 0-3, students will be exposed to blogging with GitHub Pages; developing with Jupyter Notebooks, Python, JavaScript, HTML, and Code.org AppLab; working with AP classroom and becoming familiar with Create Performance Task project requirements.
+> This is where all my assignments that are posted on my blog can be found
 
 <table>
     <tr>
