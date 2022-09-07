@@ -34,6 +34,8 @@ title: Schedule
             <a href="https://srihitakott1213.github.io/APCSP-Blog-Assignment/2022/09/04/Python-Lists.html">Python Lists</a>
             <br>
             <a href="https://srihitakott1213.github.io/APCSP-Blog-Assignment/2022/09/06/Bio-Quiz2.html">Bio Quiz 2.0</a>
+            <br>
+            <a href="https://srihitakott1213.github.io/APCSP-Blog-Assignment/2022/09/07/APCSP-Panel-Notes.html">Panel Notes</a>
         </td>
         
     </tr>
