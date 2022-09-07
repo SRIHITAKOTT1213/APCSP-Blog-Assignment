@@ -32,6 +32,8 @@ title: Schedule
         </td>
         <td>
             <a href="https://srihitakott1213.github.io/APCSP-Blog-Assignment/2022/09/04/Python-Lists.html">Python Lists</a>
+            <br>
+            <a href="https://srihitakott1213.github.io/APCSP-Blog-Assignment/2022/09/06/Bio-Quiz2.html">Bio Quiz 2.0</a>
         </td>
         
     </tr>
@@ -41,7 +43,7 @@ title: Schedule
             1 💰
         </td>
         <td>
-            <a href="https://srihitakott1213.github.io/APCSP-Blog-Assignment/2022/08/27/Biology-Quiz.html">Biology Quiz</a>
+            <a href="https://srihitakott1213.github.io/APCSP-Blog-Assignment/2022/09/06/Biology-Quiz.html">Biology Quiz</a>
             <br>
             <a href="https://srihitakott1213.github.io/APCSP-Blog-Assignment/2022/09/04/Bash-Project.html">Bash Checks</a>
         </td>
