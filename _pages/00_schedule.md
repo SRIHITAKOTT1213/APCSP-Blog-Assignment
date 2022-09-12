@@ -22,7 +22,7 @@ title: Schedule
         <td>
             3
         </td>
-        <td><a href="https://srihitakott1213.github.io/APCSP-Blog-Assignment/">App Lab Game</a></td>
+        <td><a href="https://srihitakott1213.github.io/APCSP-Blog-Assignment/2022/09/11/Applab-Game.html">App Lab Game</a></td>
          
     </tr>
 
