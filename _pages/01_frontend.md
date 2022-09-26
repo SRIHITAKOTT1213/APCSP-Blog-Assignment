@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Frontend
-permalink: /frontend/overview
+permalink: /frontend
 type: pbl
 week: 6
 ---
