@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Title",
-            "content": "alphabet = &quot;abcdefghijklmnopqrstuvwxyz&quot; alphabetList = [] for i in alphabet: alphabetList.append(i) print(alphabetList) . letter = input(&quot;What letter would you like to check?&quot;) i = 0 while i &lt; 26: if alphabetList[i] == letter: print(&quot;The letter &quot; + letter + &quot; is the &quot; + str(i) + &quot; letter in the alphabet&quot;) i += 1 . letter = input(&quot;What letter would you like to check?&quot;) for i in alphabetList: count = 0 if i == letter: print(&quot;The letter &quot; + letter + &quot; is the &quot; + str(count) + &quot; letter in the alphabet&quot;) count += 1 . evens = [] i = 0 while i &lt;= 10: evens.append(i) i += 2 print(evens) . odds = [] i = 0 while i &lt;= 10: odds.append(i) i += 2 print(odds) . numbers = [0,1,2,3,4,5,6,7,8,9,10] evens = [] for i in numbers: if (numbers[i] % 2 == 0): evens.append(numbers[i]) print(evens) . numbers = [0,1,2,3,4,5,6,7,8,9,10] odds = [] for i in numbers: if (numbers[i] % 2 == 0): odds.append(numbers[i]) print(odds) . numbers = [] newNumbers = [] i = 0 while i &lt; 100: numbers.append(i) i += 1 for i in numbers: if numbers[i] % 5 == 0: newNumbers.append(numbers[i]) if numbers[i] % 2 == 0: newNumbers.append(numbers[i]) print(newNumbers) .",
+            "content": "alphabet = &quot;abcdefghijklmnopqrstuvwxyz&quot; alphabetList = [] for i in alphabet: alphabetList.append(i) print(alphabetList) . [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;, &#39;f&#39;, &#39;g&#39;, &#39;h&#39;, &#39;i&#39;, &#39;j&#39;, &#39;k&#39;, &#39;l&#39;, &#39;m&#39;, &#39;n&#39;, &#39;o&#39;, &#39;p&#39;, &#39;q&#39;, &#39;r&#39;, &#39;s&#39;, &#39;t&#39;, &#39;u&#39;, &#39;v&#39;, &#39;w&#39;, &#39;x&#39;, &#39;y&#39;, &#39;z&#39;] . letter = input(&quot;What letter would you like to check?&quot;) i = 0 while i &lt; 26: if alphabetList[i] == letter: print(&quot;The letter &quot; + letter + &quot; is the &quot; + str(i) + &quot; letter in the alphabet&quot;) i += 1 . letter = input(&quot;What letter would you like to check?&quot;) for i in alphabetList: count = 0 if i == letter: print(&quot;The letter &quot; + letter + &quot; is the &quot; + str(count) + &quot; letter in the alphabet&quot;) count += 1 . evens = [] i = 0 while i &lt;= 10: evens.append(i) i += 2 print(evens) . odds = [] i = 0 while i &lt;= 10: odds.append(i) i += 2 print(odds) . numbers = [0,1,2,3,4,5,6,7,8,9,10] evens = [] for i in numbers: if (numbers[i] % 2 == 0): evens.append(numbers[i]) print(evens) . numbers = [0,1,2,3,4,5,6,7,8,9,10] odds = [] for i in numbers: if (numbers[i] % 2 == 0): odds.append(numbers[i]) print(odds) . numbers = [] newNumbers = [] i = 0 while i &lt; 100: numbers.append(i) i += 1 for i in numbers: if numbers[i] % 5 == 0: newNumbers.append(numbers[i]) if numbers[i] % 2 == 0: newNumbers.append(numbers[i]) print(newNumbers) .",
             "url": "https://srihitakott1213.github.io/APCSP-Blog-Assignment/2022/10/09/Python-Error-Check.html",
             "relUrl": "/2022/10/09/Python-Error-Check.html",
             "date": " • Oct 9, 2022"
@@ -146,9 +146,20 @@
   
 
   
+      ,"page2": {
+          "title": "API",
+          "content": "| Overview | Covid19 RapidAPI | Jokes API | Users Database | .",
+          "url": "https://srihitakott1213.github.io/APCSP-Blog-Assignment/api/overview",
+          "relUrl": "/api/overview",
+          "date": ""
+      }
+      
+  
 
   
-      ,"page3": {
+
+  
+      ,"page4": {
           "title": "About Me",
           "content": "This website is powered by APCSP 1. . A blog for computer science principles. &#8617; . |",
           "url": "https://srihitakott1213.github.io/APCSP-Blog-Assignment/about/",
@@ -180,7 +191,7 @@
   
 
   
-      ,"page12": {
+      ,"page13": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://srihitakott1213.github.io/APCSP-Blog-Assignment/robots.txt",
