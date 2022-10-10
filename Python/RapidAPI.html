@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Python RapidAPI | APCSP</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Python RapidAPI" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Extracting Data" />
+<meta property="og:description" content="Extracting Data" />
+<link rel="canonical" href="https://srihitakott1213.github.io/APCSP-Blog-Assignment/Python/RapidAPI" />
+<meta property="og:url" content="https://srihitakott1213.github.io/APCSP-Blog-Assignment/Python/RapidAPI" />
+<meta property="og:site_name" content="APCSP" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-10-07T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Python RapidAPI" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-10-07T00:00:00-05:00","datePublished":"2022-10-07T00:00:00-05:00","description":"Extracting Data","headline":"Python RapidAPI","mainEntityOfPage":{"@type":"WebPage","@id":"https://srihitakott1213.github.io/APCSP-Blog-Assignment/Python/RapidAPI"},"url":"https://srihitakott1213.github.io/APCSP-Blog-Assignment/Python/RapidAPI"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/APCSP-Blog-Assignment/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://srihitakott1213.github.io/APCSP-Blog-Assignment/feed.xml" title="APCSP" /><link rel="shortcut icon" type="image/x-icon" href="/APCSP-Blog-Assignment/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/APCSP-Blog-Assignment/">APCSP</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/APCSP-Blog-Assignment/schedule">Schedule</a><a class="page-link" href="/APCSP-Blog-Assignment/frontend">Frontend</a><a class="page-link" href="/APCSP-Blog-Assignment/api/overview">API</a><a class="page-link" href="/APCSP-Blog-Assignment/about/">About Me</a><a class="page-link" href="/APCSP-Blog-Assignment/search/">Search</a><a class="page-link" href="/APCSP-Blog-Assignment/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Python RapidAPI</h1><p class="page-description">Extracting Data</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-10-07T00:00:00-05:00" itemprop="datePublished">
+        Oct 7, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      4 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/SRIHITAKOTT1213/APCSP-Blog-Assignment/tree/master/_notebooks/2022-10-07-API.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/APCSP-Blog-Assignment/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/SRIHITAKOTT1213/APCSP-Blog-Assignment/master?filepath=_notebooks%2F2022-10-07-API.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/APCSP-Blog-Assignment/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/SRIHITAKOTT1213/APCSP-Blog-Assignment/blob/master/_notebooks/2022-10-07-API.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/APCSP-Blog-Assignment/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+
+<img class="card-img-top" src="https://www4.online-convert.com/dl/web7/download-file/ecffeab9-c843-48c1-bbf9-c91448a6aa25/IMG_4083.png">
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FSRIHITAKOTT1213%2FAPCSP-Blog-Assignment%2Fblob%2Fmaster%2F_notebooks%2F2022-10-07-API.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/APCSP-Blog-Assignment/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-10-07-API.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p></p>
+<table>
+    <tr>
+        <td><img src="/APCSP-Blog-Assignment//images/logo.png" height="60" title="Data" alt=""></td>
+        <td><a href="/APCSP-Blog-Assignment/Python/Errors">Identifying and Correcting Errors</a></td>
+        <td><a href="/APCSP-Blog-Assignment/Python/RapidAPI">Python RapidAPI</a></td>
+    
+    </tr>
+</table>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://currencyscoop.p.rapidapi.com/latest"</span>
+<span class="n">querystring</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"date"</span><span class="p">:</span><span class="s2">"2020-01-05"</span><span class="p">}</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">'x-rapidapi-key'</span><span class="p">:</span> <span class="s2">"730331016fmsh1b9032a0b3ed8d7p143fa3jsn4f2e6f068f2f"</span><span class="p">,</span>
+    <span class="s1">'x-rapidapi-host'</span><span class="p">:</span> <span class="s2">"currencyscoop.p.rapidapi.com"</span>
+<span class="p">}</span>
+
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">querystring</span><span class="p">)</span>
+<span class="c1">#print(response.text)  </span>
+<span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>{'meta': {'code': 200,
+  'disclaimer': 'Usage subject to terms: https://currencyscoop.com/terms'},
+ 'response': {'date': '2022-10-10T03:41:33Z',
+  'base': 'USD',
+  'rates': {'ADA': 2.35723652,
+   'AED': 3.6725,
+   'AFN': 87.73671867,
+   'ALL': 119.27867311,
+   'AMD': 402.23429983,
+   'ANG': 1.78909586,
+   'AOA': 435.90946634,
+   'ARS': 149.54792469,
+   'ATS': 14.13157446,
+   'AUD': 1.57424406,
+   'AWG': 1.79,
+   'AZM': 8512.19837613,
+   'AZN': 1.70243968,
+   'BAM': 2.00860136,
+   'BBD': 2,
+   'BCH': 0.00850624,
+   'BDT': 103.04500852,
+   'BEF': 41.42833373,
+   'BGN': 2.00860136,
+   'BHD': 0.376,
+   'BIF': 2049.28671345,
+   'BMD': 1,
+   'BND': 1.43400497,
+   'BOB': 6.93734972,
+   'BRL': 5.20186755,
+   'BSD': 1,
+   'BTC': 5.137e-05,
+   'BTN': 82.80475466,
+   'BWP': 13.36067976,
+   'BYN': 2.52325181,
+   'BYR': 25232.51808377,
+   'BZD': 2.02013043,
+   'CAD': 1.37279675,
+   'CDF': 2033.55188694,
+   'CHF': 0.99391349,
+   'CLF': 0.03808099,
+   'CLP': 938.30284819,
+   'CNH': 7.118821,
+   'CNY': 7.11169078,
+   'COP': 4619.29796192,
+   'CRC': 632.59609051,
+   'CUC': 1,
+   'CUP': 24.04969144,
+   'CVE': 113.24525744,
+   'CYP': 0.60106561,
+   'CZK': 25.13414403,
+   'DEM': 2.00860136,
+   'DJF': 177.84804644,
+   'DKK': 7.63937967,
+   'DOGE': 16.02740753,
+   'DOP': 53.91487363,
+   'DOT': 0.15432529,
+   'DZD': 140.93173266,
+   'EEK': 16.06881087,
+   'EGP': 19.68081594,
+   'ERN': 15,
+   'ESP': 170.87535508,
+   'ETB': 52.59955442,
+   'ETH': 0.00075513,
+   'EUR': 1.02698157,
+   'FIM': 6.10615512,
+   'FJD': 2.31346295,
+   'FKP': 0.9024309,
+   'FRF': 6.73655748,
+   'GBP': 0.9024309,
+   'GEL': 2.79467334,
+   'GGP': 0.9024309,
+   'GHC': 105166.41916373,
+   'GHS': 10.51664192,
+   'GIP': 0.9024309,
+   'GMD': 55.60355698,
+   'GNF': 8720.70170704,
+   'GRD': 349.9439691,
+   'GTQ': 7.9174096,
+   'GYD': 209.82070657,
+   'HKD': 7.84973699,
+   'HNL': 24.78089014,
+   'HRK': 7.7303693,
+   'HTG': 121.45020492,
+   'HUF': 436.0744262,
+   'IDR': 15294.58670894,
+   'IEP': 0.80881371,
+   'ILS': 3.54442339,
+   'IMP': 0.9024309,
+   'INR': 82.80475466,
+   'IQD': 1458.87416251,
+   'IRR': 42201.19530102,
+   'ISK': 144.30290548,
+   'ITL': 1988.51359958,
+   'JEP': 0.9024309,
+   'JMD': 153.6059947,
+   'JOD': 0.709,
+   'JPY': 145.46518468,
+   'KES': 120.87890639,
+   'KGS': 81.32020697,
+   'KHR': 4136.44552691,
+   'KMF': 505.24181102,
+   'KPW': 899.96625069,
+   'KRW': 1425.99677359,
+   'KWD': 0.31043075,
+   'KYD': 0.81999065,
+   'KZT': 472.29361025,
+   'LAK': 16670.36198267,
+   'LBP': 1507.5,
+   'LINK': 0.13052791,
+   'LKR': 366.00937768,
+   'LRD': 153.66558208,
+   'LSL': 18.14697698,
+   'LTC': 0.01850234,
+   'LTL': 3.54596196,
+   'LUF': 41.42833373,
+   'LUNA': 0,
+   'LVL': 0.72176265,
+   'LYD': 4.98280734,
+   'MAD': 10.99291644,
+   'MDL': 19.48545218,
+   'MGA': 4228.24109123,
+   'MGF': 21141.20545616,
+   'MKD': 63.2295552,
+   'MMK': 2103.56135986,
+   'MNT': 3339.80543774,
+   'MOP': 8.0852291,
+   'MRO': 381.04286807,
+   'MRU': 38.10428681,
+   'MTL': 0.44088319,
+   'MUR': 45.45633567,
+   'MVR': 15.46703745,
+   'MWK': 1018.01546721,
+   'MXN': 20.03628207,
+   'MXV': 2.85773612,
+   'MYR': 4.65013597,
+   'MZM': 63791.4116172,
+   'MZN': 63.79141162,
+   'NAD': 18.14697698,
+   'NGN': 433.70328902,
+   'NIO': 36.1806612,
+   'NLG': 2.26316955,
+   'NOK': 10.72233717,
+   'NPR': 132.54971102,
+   'NZD': 1.78120326,
+   'OMR': 0.38513204,
+   'PAB': 1,
+   'PEN': 3.95451548,
+   'PGK': 3.52107941,
+   'PHP': 58.99798027,
+   'PKR': 221.83690969,
+   'PLN': 4.99372983,
+   'PTE': 205.8913186,
+   'PYG': 7122.55235267,
+   'QAR': 3.64,
+   'ROL': 49691.86238941,
+   'RON': 4.96918624,
+   'RSD': 120.4250635,
+   'RUB': 61.33594382,
+   'RWF': 1041.78472107,
+   'SAR': 3.75,
+   'SBD': 8.17039227,
+   'SCR': 13.97437247,
+   'SDD': 57030.41886209,
+   'SDG': 570.30418862,
+   'SEK': 11.22526105,
+   'SGD': 1.43400497,
+   'SHP': 0.9024309,
+   'SIT': 246.10586282,
+   'SKK': 30.9388467,
+   'SLE': 16.42961718,
+   'SLL': 16429.61718322,
+   'SOS': 571.35596518,
+   'SPL': 0.16666667,
+   'SRD': 27.95417485,
+   'SRG': 27954.17485355,
+   'STD': 25174.40643502,
+   'STN': 25.17440644,
+   'SVC': 8.75,
+   'SYP': 2512.46824044,
+   'SZL': 18.14697698,
+   'THB': 37.7292243,
+   'TJS': 10.12025609,
+   'TMM': 17467.72723118,
+   'TMT': 3.49354545,
+   'TND': 3.25719445,
+   'TOP': 2.40071786,
+   'TRL': 18549933.108252544,
+   'TRY': 18.54993311,
+   'TTD': 6.80266329,
+   'TVD': 1.57424406,
+   'TWD': 31.70477191,
+   'TZS': 2331.69695153,
+   'UAH': 36.84107264,
+   'UGX': 3819.9544231,
+   'UNI': 15.14102504,
+   'USD': 1,
+   'UYU': 40.96111183,
+   'UZS': 11059.18009233,
+   'VAL': 1988.51359958,
+   'VEB': 819472228.2186928,
+   'VED': 8.19463774,
+   'VEF': 819463.77394635,
+   'VES': 8.19463774,
+   'VND': 23826.19007972,
+   'VUV': 123.74425598,
+   'WST': 2.79762976,
+   'XAF': 673.65574803,
+   'XAG': 0.05068513,
+   'XAU': 0.00059232,
+   'XBT': 5.137e-05,
+   'XCD': 2.70008709,
+   'XDR': 0.78185052,
+   'XLM': 7.80460771,
+   'XOF': 673.65574803,
+   'XPD': 0.00044709,
+   'XPF': 122.55149969,
+   'XPT': 0.00108895,
+   'XRP': 1.88099306,
+   'YER': 250.18508125,
+   'ZAR': 18.14697698,
+   'ZMK': 15920.94932472,
+   'ZMW': 15.92094932,
+   'ZWD': 361.9,
+   'ZWL': 626.61178419}}}</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/stats"</span>
+
+<span class="n">querystring</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"country"</span><span class="p">:</span><span class="s2">"Canada"</span><span class="p">}</span>
+
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"730331016fmsh1b9032a0b3ed8d7p143fa3jsn4f2e6f068f2f"</span><span class="p">,</span>
+	<span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"covid-19-coronavirus-statistics.p.rapidapi.com"</span>
+<span class="p">}</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">querystring</span><span class="p">)</span>
+
+<span class="c1">#print(response.text)</span>
+<span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>{'error': False,
+ 'statusCode': 200,
+ 'message': 'OK',
+ 'data': {'lastChecked': '2022-10-10T03:05:51.721Z',
+  'covid19Stats': [{'city': None,
+    'province': 'Alberta',
+    'country': 'Canada',
+    'lastUpdate': '2022-10-09T04:21:16+00:00',
+    'keyId': 'Alberta, Canada',
+    'confirmed': 607289,
+    'deaths': 4905,
+    'recovered': None},
+   {'city': None,
+    'province': 'British Columbia',
+    'country': 'Canada',
+    'lastUpdate': '2022-10-09T04:21:16+00:00',
+    'keyId': 'British Columbia, Canada',
+    'confirmed': 385599,
+    'deaths': 4321,
+    'recovered': None},
+   {'city': None,
+    'province': 'Diamond Princess',
+    'country': 'Canada',
+    'lastUpdate': '2020-12-21T13:27:30+00:00',
+    'keyId': 'Diamond Princess, Canada',
+    'confirmed': 0,
+    'deaths': 1,
+    'recovered': None},
+   {'city': None,
+    'province': 'Grand Princess',
+    'country': 'Canada',
+    'lastUpdate': '2020-12-21T13:27:30+00:00',
+    'keyId': 'Grand Princess, Canada',
+    'confirmed': 13,
+    'deaths': 0,
+    'recovered': None},
+   {'city': None,
+    'province': 'Manitoba',
+    'country': 'Canada',
+    'lastUpdate': '2022-10-09T04:21:16+00:00',
+    'keyId': 'Manitoba, Canada',
+    'confirmed': 150213,
+    'deaths': 2177,
+    'recovered': None},
+   {'city': None,
+    'province': 'New Brunswick',
+    'country': 'Canada',
+    'lastUpdate': '2022-10-09T04:21:16+00:00',
+    'keyId': 'New Brunswick, Canada',
+    'confirmed': 78056,
+    'deaths': 490,
+    'recovered': None},
+   {'city': None,
+    'province': 'Newfoundland and Labrador',
+    'country': 'Canada',
+    'lastUpdate': '2022-10-09T04:21:16+00:00',
+    'keyId': 'Newfoundland and Labrador, Canada',
+    'confirmed': 51955,
+    'deaths': 243,
+    'recovered': None},
+   {'city': None,
+    'province': 'Northwest Territories',
+    'country': 'Canada',
+    'lastUpdate': '2022-10-09T04:21:16+00:00',
+    'keyId': 'Northwest Territories,Canada',
+    'confirmed': 11511,
+    'deaths': 22,
+    'recovered': None},
+   {'city': None,
+    'province': 'Nova Scotia',
+    'country': 'Canada',
+    'lastUpdate': '2022-10-09T04:21:16+00:00',
+    'keyId': 'Nova Scotia, Canada',
+    'confirmed': 126598,
+    'deaths': 544,
+    'recovered': None},
+   {'city': None,
+    'province': 'Nunavut',
+    'country': 'Canada',
+    'lastUpdate': '2022-10-09T04:21:16+00:00',
+    'keyId': 'Nunavut, Canada',
+    'confirmed': 3531,
+    'deaths': 7,
+    'recovered': None},
+   {'city': None,
+    'province': 'Ontario',
+    'country': 'Canada',
+    'lastUpdate': '2022-10-09T04:21:16+00:00',
+    'keyId': 'Ontario, Canada',
+    'confirmed': 1477931,
+    'deaths': 14495,
+    'recovered': None},
+   {'city': None,
+    'province': 'Prince Edward Island',
+    'country': 'Canada',
+    'lastUpdate': '2022-10-09T04:21:16+00:00',
+    'keyId': 'Prince Edward Island, Canada',
+    'confirmed': 52047,
+    'deaths': 61,
+    'recovered': None},
+   {'city': None,
+    'province': 'Quebec',
+    'country': 'Canada',
+    'lastUpdate': '2022-10-09T04:21:16+00:00',
+    'keyId': 'Quebec, Canada',
+    'confirmed': 1207949,
+    'deaths': 16842,
+    'recovered': None},
+   {'city': None,
+    'province': 'Repatriated Travellers',
+    'country': 'Canada',
+    'lastUpdate': '2022-10-09T04:21:16+00:00',
+    'keyId': 'Repatriated Travellers, Canada',
+    'confirmed': 13,
+    'deaths': 0,
+    'recovered': None},
+   {'city': None,
+    'province': 'Saskatchewan',
+    'country': 'Canada',
+    'lastUpdate': '2022-10-09T04:21:16+00:00',
+    'keyId': 'Saskatchewan, Canada',
+    'confirmed': 143747,
+    'deaths': 1507,
+    'recovered': None},
+   {'city': None,
+    'province': 'Yukon',
+    'country': 'Canada',
+    'lastUpdate': '2022-10-09T04:21:16+00:00',
+    'keyId': 'Yukon, Canada',
+    'confirmed': 4923,
+    'deaths': 31,
+    'recovered': None}]}}</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="SRIHITAKOTT1213/APCSP-Blog-Assignment"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/APCSP-Blog-Assignment/Python/RapidAPI" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/APCSP-Blog-Assignment/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/APCSP-Blog-Assignment/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/APCSP-Blog-Assignment/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Computer Science Principles Blog</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/APCSP" target="_blank" title="APCSP"><svg class="svg-icon grey"><use xlink:href="/APCSP-Blog-Assignment/assets/minima-social-icons.svg#github"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
