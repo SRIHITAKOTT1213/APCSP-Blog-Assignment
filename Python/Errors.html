@@ -203,11 +203,25 @@ window.onload = wrap_img;
 
 <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">26</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">alphabetList</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">letter</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"The letter "</span> <span class="o">+</span> <span class="n">letter</span> <span class="o">+</span> <span class="s2">" is the "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" letter in the alphabet"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"The letter "</span> <span class="o">+</span> <span class="n">letter</span> <span class="o">+</span> <span class="s2">" is the "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" letter in the alphabet"</span><span class="p">)</span>
     <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The letter c is the 3 letter in the alphabet
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -461,9 +475,14 @@ window.onload = wrap_img;
 
 <span class="c1">#ideally the code should prompt the user multiple times</span>
 <span class="n">item</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Please select an item from the menu"</span><span class="p">)</span>
-
+<span class="c1">#print(item)</span>
 <span class="c1">#code should add the price of the menu items selected by the user </span>
-<span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">menu</span><span class="p">:</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">=+</span> <span class="n">menu</span><span class="p">[</span><span class="n">item</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">item</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">menu</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="s2">"not found on menu"</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -480,19 +499,9 @@ window.onload = wrap_img;
 burger  $3.99
 fries  $1.99
 drink  $0.99
-0
+donut not found on menu
 </pre>
 </div>
-</div>
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>0.99</pre>
-</div>
-
 </div>
 
 </div>
