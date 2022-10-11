@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      1 min read
     
 </span></p>
 
@@ -153,287 +153,20 @@ window.onload = wrap_img;
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
 
-<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://currencyscoop.p.rapidapi.com/latest"</span>
-<span class="n">querystring</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"date"</span><span class="p">:</span><span class="s2">"2020-01-05"</span><span class="p">}</span>
-<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">'x-rapidapi-key'</span><span class="p">:</span> <span class="s2">"730331016fmsh1b9032a0b3ed8d7p143fa3jsn4f2e6f068f2f"</span><span class="p">,</span>
-    <span class="s1">'x-rapidapi-host'</span><span class="p">:</span> <span class="s2">"currencyscoop.p.rapidapi.com"</span>
-<span class="p">}</span>
-
-
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">querystring</span><span class="p">)</span>
-<span class="c1">#print(response.text)  </span>
-<span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>{'meta': {'code': 200,
-  'disclaimer': 'Usage subject to terms: https://currencyscoop.com/terms'},
- 'response': {'date': '2022-10-10T03:41:33Z',
-  'base': 'USD',
-  'rates': {'ADA': 2.35723652,
-   'AED': 3.6725,
-   'AFN': 87.73671867,
-   'ALL': 119.27867311,
-   'AMD': 402.23429983,
-   'ANG': 1.78909586,
-   'AOA': 435.90946634,
-   'ARS': 149.54792469,
-   'ATS': 14.13157446,
-   'AUD': 1.57424406,
-   'AWG': 1.79,
-   'AZM': 8512.19837613,
-   'AZN': 1.70243968,
-   'BAM': 2.00860136,
-   'BBD': 2,
-   'BCH': 0.00850624,
-   'BDT': 103.04500852,
-   'BEF': 41.42833373,
-   'BGN': 2.00860136,
-   'BHD': 0.376,
-   'BIF': 2049.28671345,
-   'BMD': 1,
-   'BND': 1.43400497,
-   'BOB': 6.93734972,
-   'BRL': 5.20186755,
-   'BSD': 1,
-   'BTC': 5.137e-05,
-   'BTN': 82.80475466,
-   'BWP': 13.36067976,
-   'BYN': 2.52325181,
-   'BYR': 25232.51808377,
-   'BZD': 2.02013043,
-   'CAD': 1.37279675,
-   'CDF': 2033.55188694,
-   'CHF': 0.99391349,
-   'CLF': 0.03808099,
-   'CLP': 938.30284819,
-   'CNH': 7.118821,
-   'CNY': 7.11169078,
-   'COP': 4619.29796192,
-   'CRC': 632.59609051,
-   'CUC': 1,
-   'CUP': 24.04969144,
-   'CVE': 113.24525744,
-   'CYP': 0.60106561,
-   'CZK': 25.13414403,
-   'DEM': 2.00860136,
-   'DJF': 177.84804644,
-   'DKK': 7.63937967,
-   'DOGE': 16.02740753,
-   'DOP': 53.91487363,
-   'DOT': 0.15432529,
-   'DZD': 140.93173266,
-   'EEK': 16.06881087,
-   'EGP': 19.68081594,
-   'ERN': 15,
-   'ESP': 170.87535508,
-   'ETB': 52.59955442,
-   'ETH': 0.00075513,
-   'EUR': 1.02698157,
-   'FIM': 6.10615512,
-   'FJD': 2.31346295,
-   'FKP': 0.9024309,
-   'FRF': 6.73655748,
-   'GBP': 0.9024309,
-   'GEL': 2.79467334,
-   'GGP': 0.9024309,
-   'GHC': 105166.41916373,
-   'GHS': 10.51664192,
-   'GIP': 0.9024309,
-   'GMD': 55.60355698,
-   'GNF': 8720.70170704,
-   'GRD': 349.9439691,
-   'GTQ': 7.9174096,
-   'GYD': 209.82070657,
-   'HKD': 7.84973699,
-   'HNL': 24.78089014,
-   'HRK': 7.7303693,
-   'HTG': 121.45020492,
-   'HUF': 436.0744262,
-   'IDR': 15294.58670894,
-   'IEP': 0.80881371,
-   'ILS': 3.54442339,
-   'IMP': 0.9024309,
-   'INR': 82.80475466,
-   'IQD': 1458.87416251,
-   'IRR': 42201.19530102,
-   'ISK': 144.30290548,
-   'ITL': 1988.51359958,
-   'JEP': 0.9024309,
-   'JMD': 153.6059947,
-   'JOD': 0.709,
-   'JPY': 145.46518468,
-   'KES': 120.87890639,
-   'KGS': 81.32020697,
-   'KHR': 4136.44552691,
-   'KMF': 505.24181102,
-   'KPW': 899.96625069,
-   'KRW': 1425.99677359,
-   'KWD': 0.31043075,
-   'KYD': 0.81999065,
-   'KZT': 472.29361025,
-   'LAK': 16670.36198267,
-   'LBP': 1507.5,
-   'LINK': 0.13052791,
-   'LKR': 366.00937768,
-   'LRD': 153.66558208,
-   'LSL': 18.14697698,
-   'LTC': 0.01850234,
-   'LTL': 3.54596196,
-   'LUF': 41.42833373,
-   'LUNA': 0,
-   'LVL': 0.72176265,
-   'LYD': 4.98280734,
-   'MAD': 10.99291644,
-   'MDL': 19.48545218,
-   'MGA': 4228.24109123,
-   'MGF': 21141.20545616,
-   'MKD': 63.2295552,
-   'MMK': 2103.56135986,
-   'MNT': 3339.80543774,
-   'MOP': 8.0852291,
-   'MRO': 381.04286807,
-   'MRU': 38.10428681,
-   'MTL': 0.44088319,
-   'MUR': 45.45633567,
-   'MVR': 15.46703745,
-   'MWK': 1018.01546721,
-   'MXN': 20.03628207,
-   'MXV': 2.85773612,
-   'MYR': 4.65013597,
-   'MZM': 63791.4116172,
-   'MZN': 63.79141162,
-   'NAD': 18.14697698,
-   'NGN': 433.70328902,
-   'NIO': 36.1806612,
-   'NLG': 2.26316955,
-   'NOK': 10.72233717,
-   'NPR': 132.54971102,
-   'NZD': 1.78120326,
-   'OMR': 0.38513204,
-   'PAB': 1,
-   'PEN': 3.95451548,
-   'PGK': 3.52107941,
-   'PHP': 58.99798027,
-   'PKR': 221.83690969,
-   'PLN': 4.99372983,
-   'PTE': 205.8913186,
-   'PYG': 7122.55235267,
-   'QAR': 3.64,
-   'ROL': 49691.86238941,
-   'RON': 4.96918624,
-   'RSD': 120.4250635,
-   'RUB': 61.33594382,
-   'RWF': 1041.78472107,
-   'SAR': 3.75,
-   'SBD': 8.17039227,
-   'SCR': 13.97437247,
-   'SDD': 57030.41886209,
-   'SDG': 570.30418862,
-   'SEK': 11.22526105,
-   'SGD': 1.43400497,
-   'SHP': 0.9024309,
-   'SIT': 246.10586282,
-   'SKK': 30.9388467,
-   'SLE': 16.42961718,
-   'SLL': 16429.61718322,
-   'SOS': 571.35596518,
-   'SPL': 0.16666667,
-   'SRD': 27.95417485,
-   'SRG': 27954.17485355,
-   'STD': 25174.40643502,
-   'STN': 25.17440644,
-   'SVC': 8.75,
-   'SYP': 2512.46824044,
-   'SZL': 18.14697698,
-   'THB': 37.7292243,
-   'TJS': 10.12025609,
-   'TMM': 17467.72723118,
-   'TMT': 3.49354545,
-   'TND': 3.25719445,
-   'TOP': 2.40071786,
-   'TRL': 18549933.108252544,
-   'TRY': 18.54993311,
-   'TTD': 6.80266329,
-   'TVD': 1.57424406,
-   'TWD': 31.70477191,
-   'TZS': 2331.69695153,
-   'UAH': 36.84107264,
-   'UGX': 3819.9544231,
-   'UNI': 15.14102504,
-   'USD': 1,
-   'UYU': 40.96111183,
-   'UZS': 11059.18009233,
-   'VAL': 1988.51359958,
-   'VEB': 819472228.2186928,
-   'VED': 8.19463774,
-   'VEF': 819463.77394635,
-   'VES': 8.19463774,
-   'VND': 23826.19007972,
-   'VUV': 123.74425598,
-   'WST': 2.79762976,
-   'XAF': 673.65574803,
-   'XAG': 0.05068513,
-   'XAU': 0.00059232,
-   'XBT': 5.137e-05,
-   'XCD': 2.70008709,
-   'XDR': 0.78185052,
-   'XLM': 7.80460771,
-   'XOF': 673.65574803,
-   'XPD': 0.00044709,
-   'XPF': 122.55149969,
-   'XPT': 0.00108895,
-   'XRP': 1.88099306,
-   'YER': 250.18508125,
-   'ZAR': 18.14697698,
-   'ZMK': 15920.94932472,
-   'ZMW': 15.92094932,
-   'ZWD': 361.9,
-   'ZWL': 626.61178419}}}</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
-
-<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/stats"</span>
-
-<span class="n">querystring</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"country"</span><span class="p">:</span><span class="s2">"Canada"</span><span class="p">}</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://simple-elegant-translation-service.p.rapidapi.com/getSupportedLanguages"</span>
 
 <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
 	<span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"730331016fmsh1b9032a0b3ed8d7p143fa3jsn4f2e6f068f2f"</span><span class="p">,</span>
-	<span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"covid-19-coronavirus-statistics.p.rapidapi.com"</span>
+	<span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"simple-elegant-translation-service.p.rapidapi.com"</span>
 <span class="p">}</span>
 
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">querystring</span><span class="p">)</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
 
 <span class="c1">#print(response.text)</span>
-<span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Language"</span><span class="p">)</span>
+<span class="n">languages</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'languages'</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">languages</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+	<span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span><span class="n">value</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -445,143 +178,116 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>{'error': False,
- 'statusCode': 200,
- 'message': 'OK',
- 'data': {'lastChecked': '2022-10-10T03:05:51.721Z',
-  'covid19Stats': [{'city': None,
-    'province': 'Alberta',
-    'country': 'Canada',
-    'lastUpdate': '2022-10-09T04:21:16+00:00',
-    'keyId': 'Alberta, Canada',
-    'confirmed': 607289,
-    'deaths': 4905,
-    'recovered': None},
-   {'city': None,
-    'province': 'British Columbia',
-    'country': 'Canada',
-    'lastUpdate': '2022-10-09T04:21:16+00:00',
-    'keyId': 'British Columbia, Canada',
-    'confirmed': 385599,
-    'deaths': 4321,
-    'recovered': None},
-   {'city': None,
-    'province': 'Diamond Princess',
-    'country': 'Canada',
-    'lastUpdate': '2020-12-21T13:27:30+00:00',
-    'keyId': 'Diamond Princess, Canada',
-    'confirmed': 0,
-    'deaths': 1,
-    'recovered': None},
-   {'city': None,
-    'province': 'Grand Princess',
-    'country': 'Canada',
-    'lastUpdate': '2020-12-21T13:27:30+00:00',
-    'keyId': 'Grand Princess, Canada',
-    'confirmed': 13,
-    'deaths': 0,
-    'recovered': None},
-   {'city': None,
-    'province': 'Manitoba',
-    'country': 'Canada',
-    'lastUpdate': '2022-10-09T04:21:16+00:00',
-    'keyId': 'Manitoba, Canada',
-    'confirmed': 150213,
-    'deaths': 2177,
-    'recovered': None},
-   {'city': None,
-    'province': 'New Brunswick',
-    'country': 'Canada',
-    'lastUpdate': '2022-10-09T04:21:16+00:00',
-    'keyId': 'New Brunswick, Canada',
-    'confirmed': 78056,
-    'deaths': 490,
-    'recovered': None},
-   {'city': None,
-    'province': 'Newfoundland and Labrador',
-    'country': 'Canada',
-    'lastUpdate': '2022-10-09T04:21:16+00:00',
-    'keyId': 'Newfoundland and Labrador, Canada',
-    'confirmed': 51955,
-    'deaths': 243,
-    'recovered': None},
-   {'city': None,
-    'province': 'Northwest Territories',
-    'country': 'Canada',
-    'lastUpdate': '2022-10-09T04:21:16+00:00',
-    'keyId': 'Northwest Territories,Canada',
-    'confirmed': 11511,
-    'deaths': 22,
-    'recovered': None},
-   {'city': None,
-    'province': 'Nova Scotia',
-    'country': 'Canada',
-    'lastUpdate': '2022-10-09T04:21:16+00:00',
-    'keyId': 'Nova Scotia, Canada',
-    'confirmed': 126598,
-    'deaths': 544,
-    'recovered': None},
-   {'city': None,
-    'province': 'Nunavut',
-    'country': 'Canada',
-    'lastUpdate': '2022-10-09T04:21:16+00:00',
-    'keyId': 'Nunavut, Canada',
-    'confirmed': 3531,
-    'deaths': 7,
-    'recovered': None},
-   {'city': None,
-    'province': 'Ontario',
-    'country': 'Canada',
-    'lastUpdate': '2022-10-09T04:21:16+00:00',
-    'keyId': 'Ontario, Canada',
-    'confirmed': 1477931,
-    'deaths': 14495,
-    'recovered': None},
-   {'city': None,
-    'province': 'Prince Edward Island',
-    'country': 'Canada',
-    'lastUpdate': '2022-10-09T04:21:16+00:00',
-    'keyId': 'Prince Edward Island, Canada',
-    'confirmed': 52047,
-    'deaths': 61,
-    'recovered': None},
-   {'city': None,
-    'province': 'Quebec',
-    'country': 'Canada',
-    'lastUpdate': '2022-10-09T04:21:16+00:00',
-    'keyId': 'Quebec, Canada',
-    'confirmed': 1207949,
-    'deaths': 16842,
-    'recovered': None},
-   {'city': None,
-    'province': 'Repatriated Travellers',
-    'country': 'Canada',
-    'lastUpdate': '2022-10-09T04:21:16+00:00',
-    'keyId': 'Repatriated Travellers, Canada',
-    'confirmed': 13,
-    'deaths': 0,
-    'recovered': None},
-   {'city': None,
-    'province': 'Saskatchewan',
-    'country': 'Canada',
-    'lastUpdate': '2022-10-09T04:21:16+00:00',
-    'keyId': 'Saskatchewan, Canada',
-    'confirmed': 143747,
-    'deaths': 1507,
-    'recovered': None},
-   {'city': None,
-    'province': 'Yukon',
-    'country': 'Canada',
-    'lastUpdate': '2022-10-09T04:21:16+00:00',
-    'keyId': 'Yukon, Canada',
-    'confirmed': 4923,
-    'deaths': 31,
-    'recovered': None}]}}</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Language
+af afrikaans
+am amharic
+ar arabic
+az azerbaijani
+be belarusian
+bg bulgarian
+bn bengali
+bs bosnian
+ca catalan
+ceb cebuano
+co corsican
+cs czech
+cy welsh
+da danish
+de german
+el greek
+en english
+eo esperanto
+es spanish
+et estonian
+eu basque
+fa persian
+fi finnish
+fil Filipino
+fr french
+fy frisian
+ga irish
+gd scots gaelic
+gl galician
+gu gujarati
+ha hausa
+haw hawaiian
+he Hebrew
+hi hindi
+hmn hmong
+hr croatian
+ht haitian creole
+hu hungarian
+hy armenian
+id indonesian
+ig igbo
+is icelandic
+it italian
+iw hebrew
+ja japanese
+jw javanese
+ka georgian
+kk kazakh
+km khmer
+kn kannada
+ko korean
+ku kurdish (kurmanji)
+ky kyrgyz
+la latin
+lb luxembourgish
+lo lao
+lt lithuanian
+lv latvian
+mg malagasy
+mi maori
+mk macedonian
+ml malayalam
+mn mongolian
+mr marathi
+ms malay
+mt maltese
+my myanmar (burmese)
+ne nepali
+nl dutch
+no norwegian
+ny chichewa
+pa punjabi
+pl polish
+ps pashto
+pt portuguese
+ro romanian
+ru russian
+sd sindhi
+si sinhala
+sk slovak
+sl slovenian
+sm samoan
+sn shona
+so somali
+sq albanian
+sr serbian
+st sesotho
+su sundanese
+sv swedish
+sw swahili
+ta tamil
+te telugu
+tg tajik
+th thai
+tl filipino
+tr turkish
+uk ukrainian
+ur urdu
+uz uzbek
+vi vietnamese
+xh xhosa
+yi yiddish
+yo yoruba
+zh-cn chinese (simplified)
+zh-tw chinese (traditional)
+zu zulu
+</pre>
 </div>
-
 </div>
 
 </div>
