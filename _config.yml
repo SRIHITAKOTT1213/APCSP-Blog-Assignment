@@ -38,10 +38,7 @@ baseurl: "/APCSP-Blog-Assignment" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
 minima:
-  social_links:
-    gmail: srihita.kotturi@gmail.com
-    github: APCSP
-youtube channel: https://www.youtube.com/watch?v=2Lm0kjDm5KQ&t=5s
+ skin: dark
 # Set this to true to get LaTeX math equation support
 use_math: 
 

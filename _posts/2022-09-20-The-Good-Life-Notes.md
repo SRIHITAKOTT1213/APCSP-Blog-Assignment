@@ -2,6 +2,8 @@
 keywords: fastai
 description: Team work!
 title: The Good Life Notes
+permalink: /notes/Goodlife
+categories: [Extra Credit]
 toc: true
 comments: true
 nb_path: _notebooks/2022-09-20-The-Good-Life-Notes.ipynb
@@ -17,6 +19,13 @@ layout: notebook
 
 <div class="container" id="notebook-container">
         
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>{% include nav_frontend.html %}</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Key Points</strong></p>

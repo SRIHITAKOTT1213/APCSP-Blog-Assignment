@@ -2,6 +2,8 @@
 keywords: fastai
 description: Let's see how well you do!
 title: Biology Quiz
+permalink: /Biology/Quiz
+categories: [Python]
 toc: true
 comments: true
 image: /images/2022-09-06.png
@@ -18,6 +20,13 @@ layout: notebook
 
 <div class="container" id="notebook-container">
         
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>{% include nav_frontend.html %}</p>
+
+</div>
+</div>
+</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
