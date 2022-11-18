@@ -157,7 +157,7 @@
     
         ,"post14": {
             "title": "Binary Math",
-            "content": "Binary Math with Conversions . Plus Binary Octal Hexadecimal Decimal Minus . +1 | 00000000 | 0 | 0 | 0 | -1 | . Turn on | Turn on | Turn on | . | | | .",
+            "content": "Binary Math with Conversions . Shift Left Plus Binary Octal Hexadecimal Decimal Minus . &lt;- | +1 | 00000000 | 0 | 0 | 0 | -1 | . 16 | 8 | 4 | 2 | 1 | . Turn on | Turn on | Turn on | Turn on | Turn on | . | | | | | . . Byte Binary Hexadecimal . 00000000 | # 000000 | . Red&emsp;&emsp; Blue&emsp;&emsp; Black&emsp;&emsp; Gray&emsp;&emsp; White&emsp;&emsp; Orange&emsp;&emsp;",
             "url": "https://srihitakott1213.github.io/APCSP-Blog-Assignment/frontend/binary",
             "relUrl": "/frontend/binary",
             "date": " • Jul 7, 2022"
