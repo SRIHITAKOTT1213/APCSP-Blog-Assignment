@@ -15,7 +15,7 @@ type: pbl
 <!-- Hack 3: do your own thing -->
 
 
-{% assign BITS = 3 %}
+{% assign BITS = 5 %}
 
 <div class="container bg-primary">
     <header class="pb-3 mb-4 border-bottom border-primary text-dark">
@@ -25,6 +25,7 @@ type: pbl
         <div class="col-8">
             <table class="table">
             <tr id="table">
+                <th>Shift Left</th>
                 <th>Plus</th>
                 <th>Binary</th>
                 <th>Octal</th>
@@ -33,6 +34,7 @@ type: pbl
                 <th>Minus</th>
             </tr>
             <tr>
+                <td><button type="button" id="shiftleft" onclick="shift(1)"><-</button></td>
                 <td><button type="button" id="add1" onclick="add(1)">+1</button></td>
                 <td id="binary">00000000</td>
                 <td id="octal">0</td>
@@ -46,6 +48,13 @@ type: pbl
             {% comment %}Liquid for loop includes last number, thus the Minus{% endcomment %}
             {% assign bits = BITS | minus: 1 %} 
             <table class="table">
+            <tr>
+                <td>16</td>
+                <td>8</td>
+                <td>4</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
             <tr>
                 {% comment %}Build many bits{% endcomment %}
                 {% for i in (0..bits) %}
@@ -156,4 +165,91 @@ type: pbl
         }
         }
     }
+     function shift(n) {
+        let binary = getBits();
+        // convert to decimal and do math
+        let decimal = parseInt(binary, 2);
+        if (n > 0) {  // PLUS
+        decimal = MAX === decimal ? 0 : decimal << n; // OVERFLOW or PLUS
+        } else  {     // MINUS
+        decimal = 0 === decimal ? MAX : decimal >> n; // OVERFLOW or MINUS
+        }
+        // convert the result back to binary
+        binary = decimal_2_base(decimal, 2);
+        // update conversions
+        setConversions(binary);
+        // update bits
+        for (let i = 0; i < binary.length; i++) {
+        let digit = binary.substr(i, 1);
+        document.getElementById('digit' + i).value = digit;
+        if (digit === "1") {
+            document.getElementById('bulb' + i).src = IMAGE_ON;
+            document.getElementById('butt' + i).innerHTML = MSG_OFF;
+        } else {
+            document.getElementById('bulb' + i).src = IMAGE_OFF;
+            document.getElementById('butt' + i).innerHTML = MSG_ON;
+        }
+        }
+    }
 </script>
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<table>
+<tr>
+    <th>Byte Binary</th>
+    <th>Hexadecimal</th>
+</tr>
+<tr>
+    <td id="binary1">00000000</td>
+    <td id="binary2"># 000000</td>
+</tr>
+</table>
+
+<button name="button" id='btnred'  class="btn btn-primary btn-lg" onclick="myFunctionRed()">Red</button>&emsp;&emsp;
+<button name="button" id='btnred'  class="btn btn-primary btn-lg" onclick="myFunctionBlue()">Blue</button>&emsp;&emsp;
+<button name="button" id='btnred'  class="btn btn-primary btn-lg" onclick="myFunctionBlack()">Black</button>&emsp;&emsp;
+<button name="button" id='btnred'  class="btn btn-primary btn-lg" onclick="myFunctionGrey()">Gray</button>&emsp;&emsp;
+<button name="button" id='btnred'  class="btn btn-primary btn-lg" onclick="myFunctionWhite()">White</button>&emsp;&emsp;
+<button name="button" id='btnred'  class="btn btn-primary btn-lg" onclick="myFunctionOrange()">Orange</button>&emsp;&emsp;
+
+
+
+
+
+
+<script>
+function myFunctionRed() {
+ document.getElementById("binary1").innerHTML = "(255,0,0)";
+  document.getElementById("binary2").innerHTML = "FF, 0, 0";
+}
+function myFunctionBlue() {
+ document.getElementById("binary1").innerHTML = "(0,0,255)";
+  document.getElementById("binary2").innerHTML = "0, 0, FF";
+}
+function myFunctionBlack() {
+ document.getElementById("binary1").innerHTML = "(0, 0, 0)";
+  document.getElementById("binary2").innerHTML = "0, 0, 0";
+}
+function myFunctionGrey() {
+ document.getElementById("binary1").innerHTML = "(127,127,127)";
+  document.getElementById("binary2").innerHTML = "99, 99, 99";
+}
+function myFunctionWhite() {
+ document.getElementById("binary1").innerHTML = "(255,255,255)";
+  document.getElementById("binary2").innerHTML = "FF, FF, FF";
+}
+function myFunctionOrange() {
+ document.getElementById("binary1").innerHTML = "(255,153,0)";
+  document.getElementById("binary2").innerHTML = "FF, 99, 0";
+}
+</script>
+
+
+</body>
+
