@@ -9,7 +9,7 @@ categories: [C7.2]
 
 
 **Hack 1:**
-![screenshot](https://i.paste.pics/K3PYH.png)
+![screensot](https://i.paste.pics/K3PYH.png)
 
 **Hack 2:**
 **In your own words, briefly explain by writing down what an assignment operator is**
