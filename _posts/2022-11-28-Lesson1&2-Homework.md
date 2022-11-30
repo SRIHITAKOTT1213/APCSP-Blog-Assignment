@@ -9,7 +9,7 @@ categories: [C7.2]
 
 
 **Hack 1:**
-![screensot](https://i.paste.pics/K3PYH.png)
+![screensot](https://i.paste.pics/K5204.png)
 
 **Hack 2:**
 **In your own words, briefly explain by writing down what an assignment operator is**
@@ -45,7 +45,7 @@ Index:
 
 **Hack 5:**
 Python Quiz
-![screeshot](https://i.paste.pics/K3PQT.png)
+![screemshot](https://i.paste.pics/K51YC.png)
 
 Before:
 ![screenshot](https://i.paste.pics/K3QNG.png)
