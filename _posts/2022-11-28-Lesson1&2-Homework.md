@@ -45,7 +45,7 @@ Index:
 
 **Hack 5:**
 Python Quiz
-![screenshot](https://i.paste.pics/K3PQT.png)
+![screeshot](https://i.paste.pics/K3PQT.png)
 
 Before:
 ![screenshot](https://i.paste.pics/K3QNG.png)
