@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -169,6 +169,119 @@ window.onload = wrap_img;
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[5, 3, 5]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">questions</span> <span class="o">=</span> \
+<span class="p">{</span>
+    <span class="s2">&quot;1. Simulations will always have the same result&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;A&quot;</span><span class="p">:</span> <span class="s2">&quot;True&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;B&quot;</span><span class="p">:</span> <span class="s2">&quot;False&quot;</span>
+        
+    <span class="p">},</span>
+    <span class="s2">&quot;2. A simulation has results that are more accurate than an experiment&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;A&quot;</span><span class="p">:</span> <span class="s2">&quot;True&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;B&quot;</span><span class="p">:</span> <span class="s2">&quot;False&quot;</span>
+       
+    <span class="p">},</span>
+    <span class="s2">&quot;3. A simulation can model real world events that are not practical for experiments&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;A&quot;</span><span class="p">:</span> <span class="s2">&quot;True&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;B&quot;</span><span class="p">:</span> <span class="s2">&quot;False&quot;</span>
+   
+    <span class="p">},</span>
+    <span class="s2">&quot;4. Which one of these is FALSE regarding simulations&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;A&quot;</span><span class="p">:</span> <span class="s2">&quot;Reduces Costs&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;B&quot;</span><span class="p">:</span> <span class="s2">&quot;Is safer than real life experiments&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;C&quot;</span><span class="p">:</span> <span class="s2">&quot;More Efficient&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;D&quot;</span><span class="p">:</span> <span class="s2">&quot;More accurate than real life experiments&quot;</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;5. Which of the following scenarios would be the LEAST beneficial to have as a simulation&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;A&quot;</span><span class="p">:</span> <span class="s2">&quot;A retail company wants to identify the item which sold the most on their website&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;B&quot;</span><span class="p">:</span> <span class="s2">&quot;A restaurant wants to determine if the use of robots will increase efficiency&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;C&quot;</span><span class="p">:</span> <span class="s2">&quot;An insurance company wants to study the impact of rain on car accidents&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;D&quot;</span><span class="p">:</span> <span class="s2">&quot;A sports car company wants to study design changes to their new bike design &quot;</span>
+    <span class="p">},</span>
+        <span class="s2">&quot;6. Which of the following is better to do as a simulation than as a calculation&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;A&quot;</span><span class="p">:</span> <span class="s2">&quot;Keeping score at a basketball game&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;B&quot;</span><span class="p">:</span> <span class="s2">&quot;Keeping track of how many games a person has won&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;C&quot;</span><span class="p">:</span> <span class="s2">&quot;Determining the average grade for a group of tests&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;D&quot;</span><span class="p">:</span> <span class="s2">&quot;Studying the impact of carbon emissions on the environment&quot;</span>
+<span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Simulations Quiz&quot;</span><span class="p">)</span>
+<span class="n">prompt</span> <span class="o">=</span> <span class="s2">&quot;&gt;&gt;&gt; &quot;</span>
+<span class="n">correct_options</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;A&#39;</span><span class="p">]</span>
+<span class="n">score_count</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">correct_option</span><span class="p">,</span> <span class="p">(</span><span class="n">question</span><span class="p">,</span> <span class="n">options</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">correct_options</span><span class="p">,</span> <span class="n">questions</span><span class="o">.</span><span class="n">items</span><span class="p">()):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">question</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">option</span><span class="p">,</span> <span class="n">answer</span> <span class="ow">in</span> <span class="n">options</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">option</span><span class="p">,</span> <span class="s2">&quot;:&quot;</span><span class="p">,</span> <span class="n">answer</span><span class="p">)</span>
+    <span class="n">choice</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="n">prompt</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">choice</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="o">==</span> <span class="n">correct_option</span><span class="p">:</span>
+        <span class="n">score_count</span> <span class="o">=</span> <span class="n">score_count</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Your score is:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">score_count</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+Simulations Quiz
+
+ 1. Simulations will always have the same result 
+
+A : True
+B : False
+
+ 2. A simulation has results that are more accurate than an experiment 
+
+A : True
+B : False
+
+ 3. A simulation can model real world events that are not practical for experiments 
+
+A : True
+B : False
+
+ 4. Which one of these is FALSE regarding simulations 
+
+A : Reduces Costs
+B : Is safer than real life experiments
+C : More Efficient
+D : More accurate than real life experiments
+
+ 5. Which of the following scenarios would be the LEAST beneficial to have as a simulation 
+
+A : A retail company wants to identify the item which sold the most on their website
+B : A restaurant wants to determine if the use of robots will increase efficiency
+C : An insurance company wants to study the impact of rain on car accidents
+D : A sports car company wants to study design changes to their new bike design 
+Your score is:
+0
 </pre>
 </div>
 </div>
