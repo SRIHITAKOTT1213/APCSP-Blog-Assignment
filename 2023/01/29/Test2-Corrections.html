@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Test | APCSP</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Test" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Computer Science Principles Blog" />
+<meta property="og:description" content="Computer Science Principles Blog" />
+<link rel="canonical" href="https://srihitakott1213.github.io/APCSP-Blog-Assignment/2023/01/29/Test2-Corrections.html" />
+<meta property="og:url" content="https://srihitakott1213.github.io/APCSP-Blog-Assignment/2023/01/29/Test2-Corrections.html" />
+<meta property="og:site_name" content="APCSP" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-01-29T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Test" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-01-29T00:00:00-06:00","datePublished":"2023-01-29T00:00:00-06:00","description":"Computer Science Principles Blog","headline":"Test","mainEntityOfPage":{"@type":"WebPage","@id":"https://srihitakott1213.github.io/APCSP-Blog-Assignment/2023/01/29/Test2-Corrections.html"},"url":"https://srihitakott1213.github.io/APCSP-Blog-Assignment/2023/01/29/Test2-Corrections.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/APCSP-Blog-Assignment/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://srihitakott1213.github.io/APCSP-Blog-Assignment/feed.xml" title="APCSP" /><link rel="shortcut icon" type="image/x-icon" href="/APCSP-Blog-Assignment/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/APCSP-Blog-Assignment/">APCSP</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/APCSP-Blog-Assignment/schedule">Schedule</a><a class="page-link" href="/APCSP-Blog-Assignment/frontend">Frontend</a><a class="page-link" href="/APCSP-Blog-Assignment/api/overview">API</a><a class="page-link" href="/APCSP-Blog-Assignment/about/">About Me</a><a class="page-link" href="/APCSP-Blog-Assignment/search/">Search</a><a class="page-link" href="/APCSP-Blog-Assignment/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Test</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-01-29T00:00:00-06:00" itemprop="datePublished">
+        Jan 29, 2023
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      5 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/SRIHITAKOTT1213/APCSP-Blog-Assignment/tree/master/_notebooks/2023-01-29-Test2-Corrections.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/APCSP-Blog-Assignment/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/SRIHITAKOTT1213/APCSP-Blog-Assignment/master?filepath=_notebooks%2F2023-01-29-Test2-Corrections.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/APCSP-Blog-Assignment/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/SRIHITAKOTT1213/APCSP-Blog-Assignment/blob/master/_notebooks/2023-01-29-Test2-Corrections.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/APCSP-Blog-Assignment/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+
+<img class="card-img-top" src="https://www4.online-convert.com/dl/web7/download-file/ecffeab9-c843-48c1-bbf9-c91448a6aa25/IMG_4083.png">
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FSRIHITAKOTT1213%2FAPCSP-Blog-Assignment%2Fblob%2Fmaster%2F_notebooks%2F2023-01-29-Test2-Corrections.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/APCSP-Blog-Assignment/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2023-01-29-Test2-Corrections.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question #13:</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question #13:</strong> The answer is all of the following except number 1 because 1 indicates old enough to drive AND old enough to vote which is not what the question is asking.
+<img src="https://i.paste.pics/b03973a0afcf05bcffb4614166b98ea2.png" alt="screenshot"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question #15</strong> I think D is correct, making the program incorrect, because there is no way to apply the left rotate function because it only ever needs the robot to go straight and right. I think that is why D is correct.
+<img src="https://i.paste.pics/1cffad5b8acbab21430ab37375dc4e5a.png" alt="screenshot"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question #17:</strong> I think both A and D are correct because in the original code segment, you needed both segments in order for the program to come back true and that is what both A and D do.
+<img src="https://i.paste.pics/e64a04951260fcf91c40f0fd1c0a78f3.png" alt="screenshot"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question #20:</strong> There are 4 tries, so when head_counter = 2, that means there will be an even amount of heads than there is tails and that is why D is the correct answer.
+<img src="https://i.paste.pics/c84a1fdd0973880116aa0ff910ca1bbc.png" alt="screenshot"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question #21:</strong> I think it runs in an infinite loop is because i is assigned to 1 so it will always be 1, which means that i will never reach 4 so the program will just keep on running.
+<img src="https://i.paste.pics/3f87cf0197a96fb815205b901b215132.png" alt="screenshot"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question #22:</strong> They are both, in different ways, basically adding up all the heights and then dividing them by 32, which does give the average height of the 32 students
+<img src="https://i.paste.pics/557eabc42bb4a6110983b019968de40c.png" alt="screenshot"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question #24:</strong> It is 3y because the program runs y times and then 3, indicating that it is 3 times y and not y to the power 3, which makes more sense.
+<img src="https://i.paste.pics/84790721d086dd2208fd00d6017eb2f7.png" alt="screenshot"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question #26:</strong> I think the key to getting this question right is actually going through the procedure and seeing how many times it would take the robot to get into one of the positions that is indicated below. A worked.
+<img src="https://i.paste.pics/6e77f082eb5d9565587804387eb3e0be.png" alt="screenshot"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question #30:</strong> I think C is also correct because since the circle that is being drawn is the outer most one, the drawcircle function has to be first before the modification.
+<img src="https://i.paste.pics/874be48eaca2ea46f0725f559bd1ffef.png" alt="screenshot"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question #32:</strong> They both store the sum but in the opposite way. Program 1 starts from 1 and goes to n and adds all those numbers, whereas program 2 starts from n and goes all the way to 1, adding the numbers as well, so they both work.
+<img src="https://i.paste.pics/0e4bfa11fef674590c88a263f5d50114.png" alt="screenshot"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question #33:</strong> I think this is similar to the previous question, and isn't too bad to understand.
+<img src="https://i.paste.pics/f84ffc64cac8a8866f0b659ff074741e.png" alt="screenshot"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question #34:</strong> This basically means how many times you have to divide the number to get back to 1. ex. 500/2 = 250, 250/2 = 125, 125/2 = 63 (rounded up) and you keep going till you get to one, and then count the number of divisions it took and that is what the question is asking. The number of divisions it took this one to get to 1 is 9 and the number closest to that is 10.
+<img src="https://i.paste.pics/c8b502477a8db9e7a7e748b3543f9e2e.png" alt="screenshot"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question #35:</strong> Binary search basically divides things by 2, so I think its better because you can do it with any set of numbers and it would narrow it down faster, and I think that is why B is the correct answer.
+<img src="https://i.paste.pics/74f26fb1a0c8dc85539806ce170b059e.png" alt="screenshot"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question #36:</strong> It works because the count will only increase by one when the item in the list is equal to target, which means every time there is the word "target" the program will add one to the count.
+<img src="https://i.paste.pics/93f571eff530091683e7b788233a092c.png" alt="screenshot"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question #38:</strong> I think this makes sense because if the number is even, then when you subract 2 from it, it will always at some point go to 0 before it goes to any negative number, so I understand why C is the correct answer.
+<img src="https://i.paste.pics/59d68350b95086d87e63a2bea30015c0.png" alt="screenshot"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question #40:</strong> I think that the random (1,3) is the range at which how many times the roboot will rotate to the right. It could rotate once and step one or two squares forward. It could rotate twice and step one or two squares forward. or it could rotate three times and step one or two squares forward. And that is why B is the correct answer, shading in the squares that could be the possible solutions.
+<img src="https://i.paste.pics/2427af5695f99d2c45ed5b99773a17ef.png" alt="screenshot"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question #41:</strong> This basically means that if the range is set to (1,10) then there is a 2/10 possibility (20%) which is why there is a chance that it could evaulate 1 or 2, and that is why D is also the correct answer.
+<img src="https://i.paste.pics/20c489ead7ea1447426a725bfe606143.png" alt="screenshot"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question #42:</strong> All of thtem are right because those all things that you can do with a simulation, no matter how small they might seem. So D is the correct answer
+<img src="https://i.paste.pics/4c0e5f91b85ec3311b1d00c777bdd0ab.png" alt="screenshot"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question #44:</strong> This makes sense because you can model a simulation that is like a bank, but It won't be accurate because there is no user input so it won't mimic exactly what you want. That is why D is correct.
+<img src="https://i.paste.pics/19e56d9e496763a24c658377c5aa8a65.png" alt="screenshot"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question #45:</strong>  I couldn't find anything to help me understand this question so I don't know how to get this answer
+<img src="https://i.paste.pics/385e0bbbb1c61d70f569498c942de7d0.png" alt="screenshot"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question #47:</strong> This is an optimization problem, hence why it is the most benefitted by a hueristic problem
+<img src="https://i.paste.pics/352313c702f92f13d8356f49bc97bb4f.png" alt="screenshot"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question #48:</strong> The answer is D because if you changed lines 7 and 8, the average would only need to be calculated once, and would not be in that loop and also not change the program.
+<img src="https://i.paste.pics/f7ba8684f3c3302097ff24a48b41d3e2.png" alt="screenshot"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question #50:</strong> This is one that I cannot get. I really don'tt understand how to convert hexadecimal to decimal.
+<img src="https://i.paste.pics/54d7e637d55332d37b440a4b37bf0dd1.png" alt="screenshot"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Reflection:</strong> I didn't do as well as i would have liked and some of these questions were pretty easy but I just had to understand the code and maybe if I had spent a little bit more time on it I would have gotten them correct. The ones that I didn't understand, no matter how hard I looked at the question, I looked at the college board videos and that helped me a little bit. I also tried the internet to see if it gave a better explanation and eventually I understood what I did wrong.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="SRIHITAKOTT1213/APCSP-Blog-Assignment"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/APCSP-Blog-Assignment/2023/01/29/Test2-Corrections.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/APCSP-Blog-Assignment/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://srihitakott1213.github.io/APCSP-Blog-Assignment/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/APCSP-Blog-Assignment/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Computer Science Principles Blog</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
