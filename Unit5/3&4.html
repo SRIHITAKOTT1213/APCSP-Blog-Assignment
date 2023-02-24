@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>5.3 and 5.4 Notes | APCSP</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="5.3 and 5.4 Notes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Computer Science Principles Blog" />
+<meta property="og:description" content="Computer Science Principles Blog" />
+<link rel="canonical" href="https://srihitakott1213.github.io/APCSP-Blog-Assignment/Unit5/3&4" />
+<meta property="og:url" content="https://srihitakott1213.github.io/APCSP-Blog-Assignment/Unit5/3&4" />
+<meta property="og:site_name" content="APCSP" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-02-01T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="5.3 and 5.4 Notes" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-02-01T00:00:00-06:00","datePublished":"2023-02-01T00:00:00-06:00","description":"Computer Science Principles Blog","headline":"5.3 and 5.4 Notes","mainEntityOfPage":{"@type":"WebPage","@id":"https://srihitakott1213.github.io/APCSP-Blog-Assignment/Unit5/3&4"},"url":"https://srihitakott1213.github.io/APCSP-Blog-Assignment/Unit5/3&4"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/APCSP-Blog-Assignment/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://srihitakott1213.github.io/APCSP-Blog-Assignment/feed.xml" title="APCSP" /><link rel="shortcut icon" type="image/x-icon" href="/APCSP-Blog-Assignment/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/APCSP-Blog-Assignment/">APCSP</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/APCSP-Blog-Assignment/schedule">Schedule</a><a class="page-link" href="/APCSP-Blog-Assignment/frontend">Frontend</a><a class="page-link" href="/APCSP-Blog-Assignment/api/overview">API</a><a class="page-link" href="/APCSP-Blog-Assignment/about/">About Me</a><a class="page-link" href="/APCSP-Blog-Assignment/search/">Search</a><a class="page-link" href="/APCSP-Blog-Assignment/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">5.3 and 5.4 Notes</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-02-01T00:00:00-06:00" itemprop="datePublished">
+        Feb 1, 2023
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      4 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/APCSP-Blog-Assignment/categories/#Unit 5">Unit 5</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/SRIHITAKOTT1213/APCSP-Blog-Assignment/tree/master/_notebooks/2023-02-01-5.3&5.4.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/APCSP-Blog-Assignment/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/SRIHITAKOTT1213/APCSP-Blog-Assignment/master?filepath=_notebooks%2F2023-02-01-5.3%265.4.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/APCSP-Blog-Assignment/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/SRIHITAKOTT1213/APCSP-Blog-Assignment/blob/master/_notebooks/2023-02-01-5.3&5.4.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/APCSP-Blog-Assignment/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+
+<img class="card-img-top" src="https://www4.online-convert.com/dl/web7/download-file/ecffeab9-c843-48c1-bbf9-c91448a6aa25/IMG_4083.png">
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FSRIHITAKOTT1213%2FAPCSP-Blog-Assignment%2Fblob%2Fmaster%2F_notebooks%2F2023-02-01-5.3%265.4.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/APCSP-Blog-Assignment/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#Part-1">Part 1 </a></li>
+<li class="toc-entry toc-h2"><a href="#Part-2">Part 2 </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2023-02-01-5.3&5.4.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Part-1">
+<a class="anchor" href="#Part-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Part 1<a class="anchor-link" href="#Part-1"> </a>
+</h2>
+<p><strong>Google “What age groups use Facebook” vs “… TikTok”? What does the data say? Is there purposeful exclusion in these platforms? Is it harmful? Should it be corrected? Is it good business?</strong></p>
+<ul>
+<li>
+<p>Facebook users are around 25+ and attracting a more older community and tik tok is more for the newer community</p>
+</li>
+<li>
+<p>Facebook is mainly sharing photos and tik tok is more of sharing videos</p>
+</li>
+<li>
+<p>This age gap could divide the old and new generation</p>
+</li>
+<li>
+<p>I don’t think the division is that big and it is good business because there are target ads for each group</p>
+</li>
+<li>
+<p>There could  be some content on either Facebook or Tik Tok that is not meant for people who are underaged for it.</p>
+</li>
+</ul>
+<p><strong>Why do virtual assistants have female voices? Amazon, Alexa Google, Apple Siri. Was this purposeful? Is it harmful? Should it be corrected? Is it good business?</strong></p>
+<ul>
+<li>
+<p>Females have softer voices so it makes customers more comfortable. It could be a bias based on previous gender roles.</p>
+</li>
+<li>
+<p>There is an option to change the voice to a male or a different accent</p>
+</li>
+</ul>
+<p><strong>Talk about an algorithm that influences your decisions, think about these companies (ie FAANG - Facebook, Amazon, Apple,Netflix, Google)</strong></p>
+<ul>
+<li>
+<p>Netflix algorithm shows you what shows you’ve already seen and comes up with movies you might want based on what you have already seen</p>
+</li>
+<li>
+<p>On youtube if you watch a certain video, then youtube will prompt you to watch more of that video because you already viewed it once.</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Part-2">
+<a class="anchor" href="#Part-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Part 2<a class="anchor-link" href="#Part-2"> </a>
+</h2>
+<p><strong>Does the owner of the computer think this was intentional?</strong> <strong>If yes or no, justify you conclusion.</strong></p>
+<ul>
+<li>Maybe he just doesn't feel included and he might think that it is intentional that the computer doesn't follow his face, cause he has darker skin, but it follows his light skinned co-worker</li>
+</ul>
+<p><strong>How do you think this happened?</strong></p>
+<ul>
+<li>This might have happened because HP only tested their face recognition only on what people so when a person with darker skinned uses the face ID, the program didn't work as intended.</li>
+</ul>
+<p><strong>Is this harmful? Was it intended to be harmful or exclude?</strong></p>
+<ul>
+<li>Yes, because this type of technology is excluding people just because they look different and that is not their fault. It should work for everyone and it could make people feel excluded.</li>
+</ul>
+<p><strong>Should it be corrected?</strong></p>
+<ul>
+<li>Yes, because more than one type of person should be able to use face recognition.</li>
+</ul>
+<p><strong>What would you or should you do to produce a better outcome?</strong></p>
+<ul>
+<li>Get everyone's perspective so they can reduce the amount of Bias that goes into the project.</li>
+</ul>
+<p><strong>Hacks:</strong>
+I think that there are many negatives as well as positive to everything technology and that it is important to encourage diversity in the team so that every view point is acknowledged to make the project work for everyone.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>5.4 Notes:</strong></p>
+<ul>
+<li>
+<p>the more you crowdsource, the more you can reduce bias</p>
+</li>
+<li>
+<p>ex. learning history in one state might portray the U.S as good while others may view the U.S as not so good.</p>
+</li>
+<li>
+<p>Facebook users are around 25+ and attracting a more older community and tik tok is more for the newer community</p>
+</li>
+<li>
+<p>Facebook is mainly sharing photos and tik tok is more of sharing videos</p>
+</li>
+<li>
+<p>This age gap could divide the old and new generation</p>
+</li>
+<li>
+<p>I don’t think the division is that big and it is good business because there are target ads for each group</p>
+</li>
+<li>
+<p>There could  be some content on either Facebook or Tik Tok that is not meant for people who are underaged for it.</p>
+</li>
+<li>
+<p>Females have softer voices so it makes customers more comfortable. It could be a bias based on previous gender roles.</p>
+</li>
+<li>
+<p>Netflix algorithm shows you what shows you’ve already seen and comes up with movies you might want based on what you have already seen</p>
+</li>
+</ul>
+<p><strong>Hacks</strong>
+<strong>CompSci has 150 ish principles students. Describe a crowdsource idea and how you might initiate it in our environment?</strong></p>
+<ul>
+<li>Maybe combine classes to talk sometime, because there are a  lot of people in each class and when we all come together we can share ideas. We already combined classes once or twice before but for different reasons but that idea could work.</li>
+</ul>
+<p><strong>What about Del Norte crowdsourcing? Could your project be better with crowdsourcing?</strong>
+If we opened it up to people at Del Norte them they could give us their opinion on our project and ideas on howw to make it better.</p>
+<p><strong>What kind of data could you capture at N@tM to make evening interesting? Perhaps use this data to impress Teachers during finals week.</strong>
+Maybe things that we use in school? I am not really sure what a workout would do to others but we could look at others and get an idea on how we can make our project better.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="SRIHITAKOTT1213/APCSP-Blog-Assignment"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/APCSP-Blog-Assignment/Unit5/3&4" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/APCSP-Blog-Assignment/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://srihitakott1213.github.io/APCSP-Blog-Assignment/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/APCSP-Blog-Assignment/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Computer Science Principles Blog</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
