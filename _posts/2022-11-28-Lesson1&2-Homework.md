@@ -4,7 +4,7 @@ comments: false
 layout: post
 title: Lesson 3.1 and 3.2 Homework
 description: Finishing the Homework
-categories: [C7.2]
+categories: [Lesson Hacks]
 ---
 
 

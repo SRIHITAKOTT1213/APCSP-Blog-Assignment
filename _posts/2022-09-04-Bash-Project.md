@@ -3,7 +3,6 @@ keywords: fastai
 description: Bash Checks
 title: Back Checks
 permalink: /Bash/Checks
-categories: [5.A]
 toc: true
 comments: true
 nb_path: _notebooks/2022-09-04-Bash-Project.ipynb
