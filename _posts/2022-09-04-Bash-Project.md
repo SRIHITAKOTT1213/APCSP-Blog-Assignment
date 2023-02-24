@@ -2,6 +2,7 @@
 keywords: fastai
 description: Bash Checks
 title: Back Checks
+categories: [Other Projects]
 permalink: /Bash/Checks
 toc: true
 comments: true

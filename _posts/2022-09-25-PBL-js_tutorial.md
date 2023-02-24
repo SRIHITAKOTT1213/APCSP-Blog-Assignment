@@ -3,6 +3,7 @@ keywords: fastai
 description: Javascript!
 title: Javascript Tutorial
 permalink: /Javascript/Tutorial
+categories: [Other Projects]
 toc: true
 comments: true
 nb_path: _notebooks/2022-09-25-PBL-js_tutorial.ipynb

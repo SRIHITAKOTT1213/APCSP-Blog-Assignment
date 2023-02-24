@@ -3,6 +3,7 @@ keywords: fastai
 description: Python Lists
 title: Python Lists
 permalink: /Python/Lists
+categories: [Python]
 toc: true
 comments: true
 nb_path: _notebooks/2022-09-04-Python-Lists.ipynb

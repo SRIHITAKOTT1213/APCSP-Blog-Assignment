@@ -3,6 +3,7 @@ keywords: fastai
 description: Note Time!
 title: Final Exam Reflection (Trimester 1)
 categories: [College Board Quizzes/Tests]
+permalink: /Final/Reflectiontri1
 toc: true
 comments: true
 nb_path: _notebooks/2022-11-06-Final-Exam-Reflection.ipynb
@@ -18,6 +19,13 @@ layout: notebook
 
 <div class="container" id="notebook-container">
         
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>{% include nav_data.html %}</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Question 1:</strong> I thought that the answer was C because the function is being repeated three times, but I realize that C says that is being repeated 5 times, which is not what is happening. If you were to write out the function, it would be: 2 x 5 x 5 x 5, which is the same thing as 2(5)^3, hence why we limit it to C and D. But the correct answer is D because we multiply the result by 5 and that happens three times (repeats 3 times), that is why the <strong>Answer is D</strong></p>
