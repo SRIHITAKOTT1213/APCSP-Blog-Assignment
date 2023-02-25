@@ -4,9 +4,10 @@ comments: false
 layout: post
 title: Lesson 3.1 and 3.2 Homework
 description: Finishing the Homework
+permalink: /Lesson/1&2
 categories: [Lesson Hacks]
 ---
-
+{% include nav_data3.html %}
 
 **Hack 1:**
 ![screensot](https://i.paste.pics/K5204.png)
