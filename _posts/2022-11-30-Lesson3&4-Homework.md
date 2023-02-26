@@ -3,9 +3,11 @@ toc: true
 comments: false
 layout: post
 title: Lesson 3.3 and 3.4 Homework
+permalink: /Lesson/3and4
 description: Finishing the Homework
 categories: [Lesson Hacks]
 ---
+{% include nav_data3.html %}
 
 **Hack 1:**
 sequencing: Set item to number to search for

@@ -4,7 +4,7 @@ comments: false
 layout: post
 title: Lesson 3.1 and 3.2 Homework
 description: Finishing the Homework
-permalink: /Lesson/1&2
+permalink: /Lesson/1and2
 categories: [Lesson Hacks]
 ---
 {% include nav_data3.html %}
