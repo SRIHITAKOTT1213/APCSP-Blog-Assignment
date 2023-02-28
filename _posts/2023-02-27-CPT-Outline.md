@@ -22,46 +22,36 @@ layout: notebook
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Row 1 (Purpose &amp; Function):</strong></p>
 <ul>
-<li><p>For the workout log, you input your name, last name, workout, and the number of hours you've done that workout and the program is supposed to take that information and put it into a table that is right below the workout log.</p>
+<li><p>The overall purpose of the program is for people to be able to record their workouts, find motivation to continue their workouts, and use the website for educational purpose (P.E).</p>
 </li>
-<li><p>The purpose of the program is for people to be able to record their workouts and helps them to be organized and keep track of their workouts so they can work towards a goal</p>
+<li><p>The video shows the user typing in their name, the date they completed their workout, what type of workout they did, and the duration into the form and then that data gets added to the table.</p>
 </li>
-<li><p>The function of the program is that  when you input the information in the form, the data is organized and put into a table right below it.</p>
-</li>
-<li><p>The input is your name, workout, the date, and the number of hours and the output is that information appearing on a table.</p>
+<li><p>When the user inputs their name and the other information, that data is sent to be stored in the database (helped being transmitted with the API) and the information comes back to the frontend to be displayed on the table.</p>
 </li>
 </ul>
 <p><strong>Row 2 (Data Abstraction):</strong></p>
+<p><img src="https://i.paste.pics/6e818f87ebea86fe4b6fac60c43e9fd7.png" alt="screenshot"></p>
+<p><img src="https://i.paste.pics/cf2e482881728cb8592f5cb3d86c9fcf.png" alt="screenshot"></p>
 <ul>
-<li><p>The list contains the information that was inputted</p>
+<li><p>The list is called uo</p>
 </li>
-<li><p>The name is a class called workouts</p>
-</li>
-<li><p>The data in the list is whatever the user inputted into the form that they want added to their workout log.</p>
+<li><p>The data contained in the list is the ID assigned to each section of the form the user has to input. (ex. name, workout type, etc.)</p>
 </li>
 </ul>
 <p><strong>Row 3 (Managing Complexity):</strong></p>
 <ul>
-<li><p>Again, the list will be the information that was inputted by the user (name, date, workout, hours)</p>
-</li>
-<li><p>The list manages complexity because there is only a numbered amount of places where every user has their information (lets say 4 places) instead of having countless number of variables for each user (if there were 50 people using the program, then having 50 lists, one for each person, would make it less efficient). The written work is still in progress</p>
-</li>
+<li>The list manages complexity because there is only a numbered amount of places where every user has their information (lets say 4 places) instead of having countless number of variables for each user (if there were 50 people using the program, then having 50 lists, one for each person, would make it less efficient). It's better to have just a few variables (one for ALL names, and one for ALL workouts) than to have one for each person for multiple people. (The list is above)</li>
 </ul>
-<p><strong>Row 4 (Procedural Abstraction):</strong></p>
+<p><strong>Row 4 (Procedural Abstraction):</strong>
+<img src="https://i.paste.pics/db3a6b67be28221df57b783dce3ee73c.png" alt="screenshot"></p>
+<p><img src="https://i.paste.pics/8717f455f8de4a85a97d4a53b92eb56d.png" alt="screenshot"></p>
 <ul>
-<li><p>Not sure what code segment I want to show for this part, but I will figure that part out</p>
-</li>
-<li><p>Like I said, still haven't figured that part out, but it will allow the user to actually  be able to add onto the table so they can keep track of their workouts.</p>
-</li>
+<li>What this does is it takes the uo list and uses create which is what allows the user to add on a new row in the table.</li>
 </ul>
-<p><strong>Row 5 (Algorithm Implementation):</strong></p>
+<p><strong>Row 5 (Algorithm Implementation):</strong>
+<img src="https://i.paste.pics/a7de5d9067ffb4ab461d09b98c5b4c44.png" alt="screenshot"></p>
 <ul>
-<li><p>Haven't finished the code for the workout log yet so that is still a work in progress as well.</p>
-</li>
-<li><p>Once the code is finished, then I will go into steps on how it works and figure out how to explain so someoe can replicate but not write an entire essay on it.</p>
-</li>
-<li><p>Database contains lists for listing the variables, there is a piece of code that gets rid of grabage data so that is selection,</p>
-</li>
+<li>It basically repeats each step if the user doesn't input something and makes the user type what is needed in order to move onto the next step. If the user were to type in nothing, it wouldn't move forward and add a blank table. The user needs to input something in order for the program to work.</li>
 </ul>
 <p><strong>Row 6 (Testing):</strong></p>
 <ul>
