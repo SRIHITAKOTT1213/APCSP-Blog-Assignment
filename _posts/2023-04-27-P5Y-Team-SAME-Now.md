@@ -185,7 +185,8 @@ print(employee.name)  # Get the name using the getter method</p>
 <p>employee.name = "Jane Doe"  # Set the name using the setter method
 print(employee.name)</p>
 <p>In the context of backend functionality, the getter and setter methods provide a clean and controlled way to access and modify the attributes of an object. This can be particularly useful when interacting with databases, APIs, or other parts of a web application that require the management and manipulation of object attributes.</p>
-<p><strong>CHECK: Explain the function of getters and setters in your own words.</strong></p>
+<p><strong>CHECK: Explain the function of getters and setters in your own words.</strong>
+They get the information from the object and they are able to change the attributes of the object</p>
 
 </div>
 </div>
