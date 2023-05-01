@@ -306,7 +306,7 @@ git push <span class="c1"># what does it do?</span>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Notes:">Notes:<a class="anchor-link" href="#Notes:"> </a></h1><ul>
+<h1 id="Second-Page-Notes:">Second Page Notes:<a class="anchor-link" href="#Second-Page-Notes:"> </a></h1><ul>
 <li><p>CRUD: Create, Read, Update, Delete</p>
 </li>
 <li><p>Every URL in youtube has an embed link</p>
@@ -322,9 +322,18 @@ git push <span class="c1"># what does it do?</span>
 </li>
 </ul>
 <ul>
-<li>Panda is used to make your code be presentned in a more readable way</li>
+<li><p>Panda is used to make your code be presentned in a more readable way</p>
+</li>
+<li><p>They demonstrated the work of two API's: one for movies and one for housing</p>
+</li>
 </ul>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Video:">Video:<a class="anchor-link" href="#Video:"> </a></h1>
 </div>
 </div>
 </div>
