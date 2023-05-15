@@ -17,8 +17,8 @@ body{
 
 }
 .container{
-    height: 2500px;
-    width: 3000px;
+    height: 1500px;
+    width: 2000px;
     background: linear-gradient(to right, #fc6767, #ec008c);
     border-radius: 10px;
     padding: 25px;
@@ -43,19 +43,51 @@ body{
     position: relative;
     perspective: 800px;
     transform-style: preserve-3d;
+
+
 }
-.cards .card .view{
+.cards .card .view {
     width: 100%;
     height: 100%;
-    background-color: #fff;
-    border-radius: 20px 0;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.616);
+    background-image: url("images/facedown_card.png");
+    background-size: 77px 100px; /* Adjust the width and height as needed */
+    background-repeat: no-repeat;
+    background-position: center;
     position: absolute;
     transition: transform .25s linear;
     backface-visibility: hidden;
     pointer-events: none;
     user-select: none;
 }
-.card .back-view{
-    display: none;
+.cards .back-view{
+    /* display: none;*/
+    transform: rotateY(-180deg);
+}
+.card.flip .back-view{
+    transform: rotateY(0);
+}
+.card.flip .front-view{
+    transform: rotateY(180deg);
+}
+
+.card.vibration{
+    animation: vibration 0.38s ease-in-out; 
+}
+@keyframes vibration {
+    0%,
+    100%{
+        transform: translateX(0);
+    }
+    20%{
+        transform: translateX(-13px);
+    }
+    40%{
+        transform: translateX(13px);
+    }
+    60%{
+        transform: translateX(-8px);
+    }
+    80%{
+        transform: translateX(8px);
+    }
 }
