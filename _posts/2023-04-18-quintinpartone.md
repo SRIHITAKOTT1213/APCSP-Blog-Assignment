@@ -333,7 +333,15 @@ git push <span class="c1"># what does it do?</span>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Video:">Video:<a class="anchor-link" href="#Video:"> </a></h1>
+<h1 id="Video:">Video:<a class="anchor-link" href="#Video:"> </a></h1><p><a href="https://www.flexclip.com/share/28564064ee8dbbd85717b2f2c10687e070cd1f6.html">https://www.flexclip.com/share/28564064ee8dbbd85717b2f2c10687e070cd1f6.html</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The backend part of the video is when the user inputs the information in the form, and then that information is being added to the table below. Note that the reason it said undefined was because there was something wrong with the javascript part of it, but the backend and frontend do work :)</p>
+
 </div>
 </div>
 </div>
